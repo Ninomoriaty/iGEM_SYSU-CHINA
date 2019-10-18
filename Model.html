@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Carousel Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../carousel/css/bootstrap.css" rel="stylesheet">
+
+  <script src="../carousel/js/jquery.min.js"></script>
+  <script src="../carousel/js/bootstrap.js"></script>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+
+<!-- NAVBAR
+================================================== -->
+<body>
+
+
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://2019.igem.org/Team:SYSU-CHINA">
+            <img src="http://2019.igem.org/wiki/images/1/1f/T--SYSU-CHINA--title0.jpg" alt="logo"
+                 style="left:30px; width: 300px; height: 50px; ">
+          </a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right .navbar-fixed-top">
+            <!-- TEAM -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="#">Team Members</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Collaborations">Collaborations</a></li>
+                <li><a href="#">Awards</a></li>
+              </ul>
+            </li>
+
+            <!-- PROJECT -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true"
+                 aria-expanded="false">
+                PROJECT
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Description">Description</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Design">Design</a></li>
+                <li><a href="#">Experiments</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Measurement">Measurement</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Demonstrate">Demonstrate</a></li>
+                <li><a href="#">Improve</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Attributions">Attributions</a></li>
+              </ul>
+            </li>
+
+            <!-- Model -->
+            <li class="dropdown">
+              <a href="http://2019.igem.org/Team:SYSU-CHINA/Model" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Description">Description</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">R</a></li>
+              </ul>
+            </li>
+
+            <!-- PARTS -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Parts</a></li>
+                <li><a href="#">Part Collection</a></li>
+              </ul>
+            </li>
+
+            <!-- SAFETY -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                SAFETY
+              </a>
+            </li>
+
+            <!-- HUMAN PRACTICES -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false" style="width: 250px;">
+                HUMAN PRACTICES
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Human_Practices">Human Practices</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Human_Practices#IHP">Integrated Human Practices</a></li>
+              </ul>
+            </li>
+
+            <!-- AWARDS
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                AWARDS
+              </a>
+            </li>-->
+
+            <!-- OTHERS -->
+            <!--<li><a href="#contact">Contact</a></li>
+
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>-->
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+
+
+<!-- Carousel
+    ================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+
+
+  <div class="carousel-inner" role="listbox">
+
+    <div id="mdback" class="item active">
+      <div class="container">
+
+        <div class="bg"></div>
+
+        <div class="carousel-caption" style="
+        margin-bottom: 10%;">
+          <h1 style="font-size: 64px;">Example headline</h1>
+        </div>
+
+        <!-- up to next Button-->
+        <div class="scroll-down-wrapper">
+          <span class="glyphicon glyphicon-chevron-down""></span>
+        </div>
+
+      </div>
+    </div>
+
+
+</div><!-- /.carousel -->
+</div>
+
+<!-- Begin Body -->
+<div class="mycontainer" id="mycontentcon" style="margin-top: 5%;">
+
+  <p id="tam" class="hptitle">Target Analysis Model</p>
+
+  <div class="row">
+
+    <!--SideBar-->
+    <div class="col-md-2">
+      <ul class="nav mynav md" data-spy="affix" data-offset-top="-100px" style="top:10%;">
+        <ul id="main-nav" class="nav nav-tabs nav-stacked" style=" border-radius: 0; background-color: #f0ad4e">
+          <li class="active">
+            <a href="#" style="text-align: center; font-size: 22px; background-color: #f0ad4e"">
+              Model
+            </a>
+          </li>
+
+          <li>
+            <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse" style="font-size: 14px;">
+              Target Analysis Model
+              <span style="font-size: 14px;" class="pull-right glyphicon glyphicon-chevron-down"></span>
+            </a>
+            <ul id="systemSetting" class="nav nav-list collapse secondmenu hua0" style="height: 0px; margin: 0px; border: none !important;">
+              <li><a class="mdstyle" href="#c1">用户管理</a></li>
+              <li><a class="mdstyle" href="#c2">菜单管理</a></li>
+              <li><a class="mdstyle" href="#c3">角色管理</a></li>
+              <li><a class="mdstyle" href="#c4">修改密码</a></li>
+              <li><a class="mdstyle" href="#c5">c00</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#systemSetting1" class="nav-header collapsed" data-toggle="collapse">
+              Intracellular Model
+              <span style="font-size: 14px;" class="pull-right glyphicon glyphicon-chevron-down"></span>
+            </a>
+            <ul id="systemSetting1" class="nav nav-list collapse secondmenu hua1" style="height: 0px; margin: 0px; border: none !important;">
+              <li><a class="mdstyle" href="#c11" contenteditable="false">Abstract</a></li>
+              <li><a class="mdstyle" href="#c12" contenteditable="false">Assumption</a></li>
+              <li><a class="mdstyle" href="#c13" contenteditable="false">Model Description</a></li>
+              <li><a class="mdstyle" href="#c14" contenteditable="false">Model Results</a></li>
+              <li><a class="mdstyle" href="#c15" contenteditable="false">Parameters Configuration and Relevant Data</a></li>
+              <li><a class="mdstyle" href="#c16" contenteditable="false">Conclusion and Future Improvements</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#systemSetting2" class="nav-header collapsed" data-toggle="collapse">
+              Intercellular Model
+              <span style="font-size: 14px;" class="pull-right glyphicon glyphicon-chevron-down"></span>
+            </a>
+            <ul id="systemSetting2" class="nav nav-list collapse secondmenu hua2" style="height: 0px; margin: 0px; border: none !important;">
+              <li><a class="mdstyle" href="#c21">用户管理</a></li>
+              <li><a class="mdstyle" href="#c22">菜单管理</a></li>
+              <li><a class="mdstyle" href="#c23">角色管理</a></li>
+              <li><a class="mdstyle" href="#c24">修改密码</a></li>
+              <li><a class="mdstyle" href="#c25">c222</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </ul>
+    </div>
+
+
+
+
+    <div class="col-md-9" id="mycontent">
+      <h1 id="" class="">Model Introduction</h1>
+      <hr class="col-md-12">
+
+      <p>This year we proposed a new cancer treatment system, Adenovirus system with miRNA Targeting(AdmiT). Why did we choose cancer therapy? What is AdmiT system? Why did we build such a system? What helped us in it? What changes have the project gone through?</p>
+      <p>Below we will detail how this project was born, how it is improved, and its biological significance.</p>
+
+
+      <div>
+        <h2 id="c1">Determine our direction and research field (Find our direction)</h2>
+
+        <h3 class="">What has everyone been focusing on?</h3>
+        <p>Heated research fields often correlate with great demands from society. Back in late 2018, when we were first pooling wisdoms for our 2019 iGEM project, we wrote a “crawlers” to catch up the frequently occurring key words in recent years’ iGEM competition, in designation of finding what unravelling puzzles did scientists put much effort in, and what urgent issues did the iGEM community mostly care about. The key word “cancer”, unbelievable but reasonable, topped the list. In light of this, we decided to find a new way, using biological engineering, for cancer therapy. </p>
+
+        <h3 class="">What does a new cancer biotherapy need?</h3>
+        <p>Cancer therapy is developing rapidly, and many new biological therapy methods, such as CAR-T, are often reported in recent years. So, what characteristics do new therapies need compared to traditional treatments such as chemoradiotherapy and surgery? </p>
+        <p>To answer this question, we turned to Dr. Huang Rongkang, an experienced clinician from the Sixth affiliated hospital of Sun Yat-Sen University, who has been dedicated himself in treating colorectal cancer and research development frontline for about a decade. </p>
+        <p>“Specificity is the major defect in current cancer therapy!” He said.</p>
+        <p>Dr. Huang told us that chemotherapy was once referred as to have “333 principles”, which means it is effective to one third of patients, neutral (neither improves nor worsens) to another one third of patients, and ineffective even aggravating the situations due to toxic side effects to the remaining one third. Dr. Huang also anticipated a more precise medicine and pinpoint drug delivery in cancer therapy, for less toxic side effects and better treatments when dealing with cancer. </p>
+        <p>To sum up, an idol new cancer treatment method should meet the needs of precision therapy and local drug delivery.</p>
+        <img src="https://2019.igem.org/wiki/images/2/2b/T--SYSU-CHINA--direction.jpg" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+
+      </div>
+
+      <div>
+        <h2 id="c2">Find the precise target</h2>
+        <p>To achieve specificity, it is necessary to have a high specificity target and the corresponding identification system. In the past few years, a large number of cancer molecular targets were applied in the research of new drugs. However, how can we improve these targets with synthetic biology? </p>
+
+        <h3 class="">What has everyone been focusing on?</h3>
+        <p>As we struggle with different cancer targets, a lecture given by Professor Kuang from Hong Kong University of Science and Technology enlightened us. In this November lecture, Professor Kuang introduced her work to screen specific cell type from iPSCs according to different endogenous miRNA expression, which led us into asking such a question: </p>
+        <p>Could the endogenous miRNA of cancer cell also be used as a target?</p>
+        <p>With this question, we consulted Professor Zheng Linlin who studied oncomiRNAs in our college. It was not until then did we learn that miRNA profile has been widely served as a marker for cancer detection and prognosis. In other words, it certainly has potentials to target tumor cells as long as we could find the tumor-specific miRNA profiles.</p>
+        <p>So now we asked: how to find specific miRNA expression profiles and how to construct corresponding systems that target miRNAs.</p>
+
+        <h3 class="">Filter colon tumor specific miRNA expression by modeling </h3>
+        <p>The work to find out specific miRNA expression profile starts with 2 questions:</p>
+        <p>• Which tumor should we focus on?</p>
+        <p>• What principles do we need to achieve screening?</p>
+        <p>When we first interviewed Dr. Huang, he has motivated us to apply our newly developed therapy to colon cancer. Because there is still a large gap in the precise treatment of colon cancer and new adjuvant therapy is urgently needed. So we use colon cancer as the first application case of our system.</p>
+        <p>With his encouragement, we began to analyze the miRNA expression profiles of colon cancer. An R language program was developed for miRNA filtering and we put forward some principles based on security and specific considerations. (For more details please refers to “Design”) Based on the above work, we successfully obtained miRNA expression profiles specifically expressed in colon cancer.</p>
+
+        <h3 class="">Review our target: Reduce potential off-target risk</h3>
+        <p>We obtained a specific miRNA expression in colon cancer by computer program analysis and showed our staged results to our PI Professor Lu Yongjun. He asked if we had checked the expression of these miRNAs between different tissues and asked us to further determine the credibility of the data. We were then surprised to find that the target miRNA profile determined initially had the same expression in sperm. More accurately, the high expression of miR-592 and the low expression of miR-885-5P found in colon cancer also occur in sperm, which means that our system may have potential off-target risks if we only use those two miRNAs above.</p>
+        <p>To reduce off-target effects, we need a miRNA that targets specific tissues. At this point we found miR663, a miRNA missing in colon-derived cells, which is highly expressed in sperm. After adding new miRNAs, we again examined the specificity of the new combination and found no similar miRNA expression patterns in all normal tissues.</p>
+        <img src="https://2019.igem.org/wiki/images/0/09/T--SYSU-CHINA--miRNA_in_tissue.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+
+        <h3 class="">miRNA-sensor: A synthetic RNA system to correspond miRNA target</h3>
+        <p>With the target, we need a set of targeting systems to identify miRNA expression. The work on the mRNA circuit by Professor Ron Weiss in MIT has helped us a lot. Based on the nature of mRNA degradation caused by miRNA binding to mRNA, they proposed an mRNA circuit consisting of two basic logic gate elements that respond to miRNA concentrations.</p>
+        <p>Based on this work, we constructed the basic elements that respond to the high and low expression of miRNAs, and used them to form logic gates to identify specific miRNA expression in colon cancer. (For more details please refers to “Design”)/p>
+          <img src="https://2019.igem.org/wiki/images/1/12/T--SYSU-CHINA--logic_gate.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+
+        <h3 class="">Surprise: Help from project and advisor in SYSU-CHINA 2013</h3>
+        <p>At this time, our PI Prof. Lu told us that our team SYSU-CHINA had done a similar work with iPSC in 2013 and their advisor Dr. Jiang Shuai is still working in our university. After learning about our project, Dr. Jiang pointed out the potential problem of this system at once —— Sponge Effect. The sponge effect means that the miRNA will suddenly increase or decrease under certain conditions. Since the mechanism is still unclear, almost all miRNA-related systems will be affected by it. </p>
+        <p>Based on the experience of SYSU-CHINA 2013, Dr. Jiang suggested that we could improve the sequence of mRNA and miRNA binding to reduce the effect of sponge effect. Based on his suggestions and other works in recent years, we made improvements to the miRNA binding sequence and shared this design concept with Central South University later.</p>
+        <p>Without his reminder, we might not have realized this problem yet. The previous work by SYSU-CHINA in 2013 really gives us a big surprise! </p>
+      </div>
+
+      <div>
+        <h2 id="c3">Deliver our system into cancer cell (Find out Deliverer)</h2>
+        <p>Since our system is constructed to recognize endogenous specific miRNAs, we need a drug delivery vector to bring the system into cancer cell. Such deliverer can be divided into two levels, one is what to use to carry the mRNA circuit at the cellular level, and the other is how to achieve the drug delivery in practical application.</p>
+        <p>It was about December, Wen Rou, one of our team members, happened to read an article "Adenoviral vector with shield and adapter increases tumor specificity and escapes liver and immune control." on Nature communications. This article brought the oncolytic virus in front of us and we were amazed to find that this system can not only act as a carrier, but also itself as an effector for killing tumors. This engineered virus can only be propagated in cancer cells and released after cell lysis to infect surrounding cancer cells. How amazing! We thought. It could be self-replicon guard to eliminate evil tumor cells in our body!</p>
+        <p>As the oncolytic virus is more of a conceptual idea, we need to identify a real virus as a modified chassis. After comparing different viruses (see “Design” for details), we chose adenovirus as the basic biological chassis.</p>
+        <img src="https://2019.igem.org/wiki/images/8/83/T--SYSU-CHINA--oncocomic.jpg" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+
+        <h3 class="">Safety concerns: Is it suitable to use a virus?</h3>
+        <p>Here comes another problem that the adenovirus is a BSL II creature and whether the use of it comply with regulations of iGEM competition? We emailed the organizing committee on this issue and received a warm response from Piers. Here, I would like to sincerely thank Piers for his kind assistance, with which we started to re-consider the security of our project.</p>
+        <p>We looked back at the iGEM projects over the past few years and found that there are not many examples on virus application. Obviously, this is a field full of doubts about security. Whether adenovirus should continue to serve as a biological chassis, we refer to three aspects for opinions: public concerns, doctors' opinions and relevant legal provisions.</p>
+        <p>A lot of work, such as interviews, questionnaires were conducted and released when trying to settle this urgent problem. Fortunately, we found that it is possible to promote our project into further clinical application if our design was truly proved effective. (See “Human Practices” for more details)</p>
+
+        <h3 class="">Mode of administration: How to apply it to future medical practice</h3>
+        <p>Considering the practical application of our system in the future, we need to design a viable mode of administration. Viral therapy is generally administered intravenously, and the FDA has strict regulations on the amount of virus injected. Since our first application case was colon cancer, which is exposed to the colon surface, we also considered two non-invasive modes of administration: enema and rectal suppositories. </p>
+        <p>At first we thought that enema could be used as a viable alternative to injection because it more accurately locates the colon. Since blood injection is not required, the risk of infection from injection also decrease, while the public's concerns about viral injections will be reduced as well.</p>
+        <p>However, Dr. Huang vetoed our mode of administration, when we brought our existing project to him with confidence once again. It turns out that although the enema could be administered locally, it stays in the intestine for too short a time, which results that the virus may not have enough chance to infect cancer cells. In addition, Dr. Huang introduced several new modes of administration and suggested that we should do a deep investigation about it. We then compared five potential modes of administration and selected a cutting-edge method recommended by Dr. Huang, which is called hydrogel-based drug delivery systems.(more details in “Future work” and “Human Pratice”)</p>
+
+      </div>
+
+      <div>
+        <h2 id="c4">Potential in Synthetic Biology</h2>
+        <p>In the end we will introduce the synthetic biology value of the above construction system, which is reflected in both medical applications and basic research.</p>
+
+        <h3 class="">Potential for multiple tumors by rapid adaptation </h3>
+        <p>Although we are temporarily focusing on colon cancer, this system theoretically has the potential to respond to all tumor cells. Since the target is a miRNA that is present in all cells, as long as any tumor-specific miRNA can be found, it can be suitable to our system with only modifying few miRNA target sequences. Combined with the mode of administration we envision, this system can be well applied to the treatment of various solid tumors in the future.</p>
+        <p>We also understand that oncolytic viruses can be combined with a variety of oncology and can enhance the effectiveness of other therapies. A new generation of oncolytic viruses and immune factors work together to make them more lethal. The oncolytic virus system we built is fully compatible with such improvements. As we use engineering ideas to build this system, it is very convenient and feasible to modify the different parts of the whole system.</p>
+
+        <h3 class="">Prospect in personalized treatment</h3>
+        <p>Most importantly, since the tumors showed large differences in different people, many molecular targets results vary. Our oncolytic virus system offers a potential for future personalized cancer treatment.</p>
+        <p>The doctor can first collect the patient's tumor sample to detect the expression of miRNA, and then use our computer analysis model to screen the miRNA specifically expressed in the individual tumor to construct a personalized oncolytic virus. There is no doubt that this personalized oncolytic virus is safer and more efficient.</p>
+
+        <h3 class="">Virus system responding to different levels of signals</h3>
+        <p>From another perspective, we have built a modular virus system that responds to different levels of regulation this year. First of all, our miR sensor, switch and virus vectors are highly modular which could acheive rapid update through synthetic biology method. </p>
+        <p>On the other hand, our system provides the possibility of simultaneous regulation at the transcriptional level and translation level. Gene expression can be regulated at the transcriptional level by the Tet-on system, and protein translation can be regulated at the mRNA level by miRNA sensor. This enriches the possibility of virus-mediated gene expression systems.</p>
+
+      </div>
+
+      <hr id="im1"  class="col-md-13">
+    </div>
+
+    <p class="hptitle" style="margin-top: 5%;">Intracellular Model</p>
+
+
+    <div class="row">
+      <!--SideBar-->
+      <div class="col-md-2">
+
+      </div>
+
+      <div class="col-md-9" id="mycontent">
+        <h1 id="c11" class="">Model Introduction</h1>
+        <hr class="col-md-12">
+
+        <div>
+        <h2 class="">Abstract</h2>
+        <p>A stochastic, exploratory model which simulated the molecular dynamic in each cell was adapted from the model used by L. Wroblewska et al[1] to investigate whether our project design would be feasible. </p>
+        <p>In our design of the biological experiment, EGFP was used to validate our project design, which was considered as a representative of a viral early gene expression product during the infection. Therefore, this idea was also applied in the model; L7Ae was the inhibitor of EGFP expression by “binding” to the mRNAs of the EGFP and “inhibit” their “translation”, and was also simulated in our model.</p>
+        </div>
+        <hr id="c12" class="col-md-14">
+
+        <div>
+          <h2 class="">Part I: Assumption</h2>
+          <p>The different micro-RNA (miRNA, miR) profiles in control cells (which “expressed” neither miR-H nor miR-L), cancer cells (which only “expressed” miR-H) and normal cells (which only “expressed” miR-L) could distinguish the “expression” of EGFP.</p>
+        </div>
+        <hr id="c13" class="col-md-14">
+
+        <div>
+          <h2>Part II: Model Description</h2>
+          <p>A detailed demonstration of the model is as shown in Fig. 1. </p>
+
+          <p>In general, the model simulates the molecular dynamic in each cell by circularly calculating the probability of the events, including transcription, translation, substrates binding/unbinding, degradation and the inhibition of translation (caused by binding of L7Ae), and then executing one of the events according to the probability. The probability of an event is calculated by multiplying the amount of the reactant(s) involved and the factor(s) of the event (for example, the translation rate for the translation event), and then this value is divided by the sum of the product values of all events calculated as has been noted, and finally gets the probability of the event. All simulations were run in batches of 60 cells and the duration of 24 hours (1440 minutes).</p>
+          <p>1. A constant amount (as in the same batch of simulations, the same below), N0, of plasmid(s) is assumed in a single cell.</p>
+          <p>2. At some point, the cell “divides” and marks the start of the simulation. nC, nL are the numbers of the plasmid DNA (pDNA) of EGFP and L7Ae that can be “expressed” in the cell, respectively. To better simulate the transfection behavior, both nC and nL follow a Poisson distribution, which has a mean of N0 and a variance described by SDfactor (i.e. variance-to-mean rate, VMR).</p>
+          <p>3. Transcription: The gene of EGFP and L7Ae can be “transcribed” to message RNAs (mRNAs) of EGFP and L7Ae (mC and mL, respectively).</p>
+          <p>4. Translation: The mRNAs of EFGP and L7Ae can be “translated” to EGFP and L7Ae proteins (C and L, respectively).</p>
+          <p>5. Degradation of mRNAs and proteins: the degradation of mRNAs and proteins in the normal situation.</p>
+          <p>6. Substrates binding/unbinding: the binding/unbinding behavior of substrates, which include miR-H “bind to/unbind from” mRNA of L7Ae (mL7Ae), miR-L “bind to/unbind from” mEGFP, L7Ae “(doubly) bind to/unbind from” mEGFP.</p>
+          <p>7. The translation inhibition of mEGFP caused by L7Ae “(doubly) bind/unbind” to mEGFP: it is considered that when L7Ae doubly bind to mEGFP, the translation is inhibited as twice as much as when L7Ae singly binds to mEGFP.</p>
+          <p>8. The degradation of mRNAs caused by miR: After the miR “binds” to the target mRNA, the RISC complex can “degrade” the mRNA[2]. To simplify the simulation, it is considered that the total amount of miRs in a cell is constant; also, it is considered that the miRs will not be “degraded” during the event (the miRs are released/unbound from the “degraded” mRNAs).</p>
+        </div>
+
+        <hr id="c14" class="col-md-14">
+        <div>
+          <h2>Part III: Model Results</h2>
+           <h3 class="">The different miRNA profiles in control cells, cancer cells and normal cells could distinguish the “expression” of EGFP</h3>
+          <p>Some of our results show that the different miRNA profiles in control cells, cancer cells and normal cells can distinguish the “expression” of EGFP (N0=3, Fig. 2A), while others do not completely support this assumption (N0=1 or 5, Fig. 2A). </p>
+          <p>Further investigation was done by analyzing the amount of mEGFP (Fig. 2B), the “expression” of L7Ae (Fig. 2C), and the amount of mL7Ae (Fig. 2D). There is no significant difference of vL7Ae (variable forms of L7Ae proteins) or mL7Ae between normal cells and control cells, and there is a very significant difference of vL7Ae and mL7Ae between cancer cells and control cells (Fig. 2C-D). These results show that both the L7Ae inhibition system and the miR-H inhibition system work well.</p>
+          <p>There is no significant difference of mEGFP between control cells and normal cells (Fig. 2B), which suggests that the miR-L system does not work so well, probably because the total copy number of miR-L is too low. </p>
+          <p>Also, significant difference of mEGFP is observed between control cells and cancer cells, which is not expected, and it is even odd that the mEGFP in cancer cells is lower than in control cells (Fig. 2B). After excluding possible bugs, repeating the simulations with the exact same parameters and still getting the same result, we infer that a technical problem may occur during the simulation, which is that because the number of simulation repeats was limited, and only one event was executed in every simulation repeat, the operation of miR-H system may occupy the simulation repeat which may be used by mEGFP “synthesis”, and the copy number of mEGFP was unexpectedly affected.</p>
+          <p>In conclusion, these results show that the L7Ae inhibition system and the miR-H inhibition system work well while the miR-L inhibition system does not.</p>
+          <img src="https://2019.igem.org/wiki/images/8/82/T--SYSU-CHINA--model.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;" alt="Cinque Terre">
+          <p style="width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;"><strong>Figure 2</strong>  Copy numbers of vEGFP (A), mEGFP (B), vL7Ae (C) and mL7Ae (D). The P-values are generated by Welch Two Sample t-test. Significance Symbols: *, P-value<0.05; **, P-value<0.01; ***, P-value<0.001; n.s., not significant, P-value≥0.05.</p>
+
+        </div>
+
+        <hr id="c15" class="col-md-14">
+        <div>
+          <h2 id="c15">Part IV: Parameters Configuration and Relevant Data</h2>
+          <table class="table table-striped table-responsive" style="width:80%; margin-left: 10%; margin-left: 10%; ">
+            <caption><p style="color:#000; width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;"><strong>Table 1</strong> Parameters configuration of the model</p></caption>
+            <thead>
+            <tr>
+              <th>Object</th>
+              <th>Description</th>
+              <th>Value</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+              <td>N0</td>
+              <td>starting copy number of plasmid(s)</td>
+              <td>various: 1,3,5</td>
+            </tr>
+            <tr>
+              <td>SDfactor</td>
+              <td>the variance-to-mean rate of the Poisson distribution followed by nC and nL</td>
+              <td>0.3</td>
+            </tr>
+            <tr>
+              <td>kTS</td>
+              <td>transcription rate (1/min)</td>
+              <td>1<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>kTL</td>
+              <td>translation rate (1/min)</td>
+              <td>1<sup>[8]</sup></td>
+            </tr>
+            <tr>
+              <td>degR</td>
+              <td>mRNA degradation rate (1/min)</td>
+              <td>0.002<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>degP</td>
+              <td>protein degradation rate (1/min)</td>
+              <td>5e-4<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>sigma</td>
+              <td>L7Ae translation inhibition factor</td>
+              <td>3e-3<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>sigma2</td>
+              <td>L7Ae translation inhibition factor (doubly bound)</td>
+              <td>1.5e-3<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>kON_L</td>
+              <td>L7Ae binding rate (1/molec/min)</td>
+              <td>0.00024<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>kOFF_L</td>
+              <td>L7Ae unbinding rate (1/molec/min)</td>
+              <td>0.01<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>kcat_miR</td>
+              <td>mRNA degradation rate in RISC complex (1/min)</td>
+              <td>4.26e-1<sup>[2]</sup></td>
+            </tr>
+            <tr>
+              <td>kON_miR</td>
+              <td>miR binding rate (1/molec/min)</td>
+              <td>1e-1<sup>[2]*</sup></td>
+            </tr>
+            <tr>
+              <td>kOFF_miR</td>
+              <td>miR unbinding rate (1/molec/min)</td>
+              <td>4.14e-1<sup>[2]*</sup></td>
+            </tr>
+            <tr>
+              <td>miR-H</td>
+              <td>miR-H copy number in a cancer cell</td>
+              <td>55<sup>[3,4,5] #</sup></td>
+            </tr>
+            <tr>
+              <td>miR-L</td>
+              <td>miR-L copy number in a normal cell</td>
+              <td>10<sup>[3,4,5] #</sup></td>
+            </tr>
+            </tbody>
+
+          </table>
+          <p style="width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;">* kON_miR and kOFF_miR were calculated according to the formula Km=(kcat_miR+kOFF_miR)/kON_miR. Km=8.4(nM)[2].</p>
+          <p style="width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;"># These are estimated copy numbers of miR-H and miR-L according to the ACN (absolute copy number in a cell) - RPM (reads per million) relationship. It is estimated that in the MCF-7 cell line, the value of miR ACN is about 2-4 folds of RPM[3,4]. In our project design, we used hsa-miR-592 as miR-H and hsa-miR-885-5p as miR-L. The RPM of hsa-miR-592 and hsa-miR-885-5p in colon cancer (COAD) are 20.74 and 3.71, respectively, according to the starbase2 database[5]. Therefore, the estimated copy numbers of miR-H and miR-L are 55 and 10 in a cell, respectively.</p>
+
+        </div>
+
+        <hr id="c16" class="col-md-14">
+        <div>
+          <h2>Part V: Conclusion and Future Improvements</h2>
+          <p>Our modeling suggests that our project design is feasible that the different micro-RNA profiles in cancer cells and normal cells can distinguish the expression of EGFP. The L7Ae inhibition system and the miR-H inhibition system work well. Future improvements include increasing the copy number of miR-L by selecting other species of miR which may improve the performance of the miR-L inhibition system.</p>
+
+
+          <h3 class="">References</h3>
+          <p>[1] L. Wroblewska, T. Kitada, K. Endo, et al. Mammalian synthetic circuits with RNA binding proteins for RNA-only delivery (2015). Nature Biotechnology 33(8), 839-841.</p>
+          <p>[2] B. Haley and P. D Zamore. Kinetic analysis of the RNAi enzyme complex (2004). Nature Structural and Molecular Biology 11(7), 599-606.</p>
+          <p>[3] Y. Song, D. Kilburn, J. H. Song, et al. Determination of absolute expression profiles using multiplexed miRNA analysis (2017). PLoS One 12(7), e0180988.</p>
+          <p>[4] B. Panwar, G. S. Omenn, Y. Guan. miRmine: A Database of Human miRNA Expression Profiles (2017). Bioinformatics 33(10), 1554-1560.</p>
+          <p>[5] JH. Li, S. Liu, H. Zhou, et al. starBase v2.0: decoding miRNA-ceRNA, miRNA-ncRNA and protein-RNA interaction networks from large-scale CLIP-Seq data (2014). Nucleic Acids Research 42(Database issue): D92-7.</p>
+
+        </div>
+
+        <hr id="im2" class="col-md-13">
+      </div>
+    </div>
+
+    <p class="hptitle" style="margin-top: 5%;">Intercellular Model</p>
+
+    <div class="row">
+      <!--SideBar-->
+      <div class="col-md-2">
+
+      </div>
+
+      <div class="col-md-9" id="mycontent2">
+        <h1 id="" class="">Model Introduction</h1>
+        <hr class="col-md-12">
+        <p>This year we proposed a new cancer treatment system, Adenovirus system with miRNA Targeting(AdmiT). Why did we choose cancer therapy? What is AdmiT system? Why did we build such a system? What helped us in it? What changes have the project gone through?</p>
+        <p>Below we will detail how this project was born, how it is improved, and its biological significance.</p>
+
+
+        <div>
+          <h2 id="c21">c21 our direction and research field (Find our direction)</h2>
+
+          <h3 class="">What has everyone been focusing on?</h3>
+          <p>Heated research fields often correlate with great demands from society. Back in late 2018, when we were first pooling wisdoms for our 2019 iGEM project, we wrote a “crawlers” to catch up the frequently occurring key words in recent years’ iGEM competition, in designation of finding what unravelling puzzles did scientists put much effort in, and what urgent issues did the iGEM community mostly care about. The key word “cancer”, unbelievable but reasonable, topped the list. In light of this, we decided to find a new way, using biological engineering, for cancer therapy. </p>
+
+          <h3 class="">What does a new cancer biotherapy need?</h3>
+          <p>Cancer therapy is developing rapidly, and many new biological therapy methods, such as CAR-T, are often reported in recent years. So, what characteristics do new therapies need compared to traditional treatments such as chemoradiotherapy and surgery? </p>
+          <p>To answer this question, we turned to Dr. Huang Rongkang, an experienced clinician from the Sixth affiliated hospital of Sun Yat-Sen University, who has been dedicated himself in treating colorectal cancer and research development frontline for about a decade. </p>
+          <p>“Specificity is the major defect in current cancer therapy!” He said.</p>
+          <p>Dr. Huang told us that chemotherapy was once referred as to have “333 principles”, which means it is effective to one third of patients, neutral (neither improves nor worsens) to another one third of patients, and ineffective even aggravating the situations due to toxic side effects to the remaining one third. Dr. Huang also anticipated a more precise medicine and pinpoint drug delivery in cancer therapy, for less toxic side effects and better treatments when dealing with cancer. </p>
+          <p>To sum up, an idol new cancer treatment method should meet the needs of precision therapy and local drug delivery.</p>
+          <img src="https://2019.igem.org/wiki/images/2/2b/T--SYSU-CHINA--direction.jpg" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+
+        </div>
+
+        <div>
+          <h2 id="c22">Find the precise target</h2>
+          <p>To achieve specificity, it is necessary to have a high specificity target and the corresponding identification system. In the past few years, a large number of cancer molecular targets were applied in the research of new drugs. However, how can we improve these targets with synthetic biology? </p>
+
+          <h3 class="">What has everyone been focusing on?</h3>
+          <p>As we struggle with different cancer targets, a lecture given by Professor Kuang from Hong Kong University of Science and Technology enlightened us. In this November lecture, Professor Kuang introduced her work to screen specific cell type from iPSCs according to different endogenous miRNA expression, which led us into asking such a question: </p>
+          <p>Could the endogenous miRNA of cancer cell also be used as a target?</p>
+          <p>With this question, we consulted Professor Zheng Linlin who studied oncomiRNAs in our college. It was not until then did we learn that miRNA profile has been widely served as a marker for cancer detection and prognosis. In other words, it certainly has potentials to target tumor cells as long as we could find the tumor-specific miRNA profiles.</p>
+          <p>So now we asked: how to find specific miRNA expression profiles and how to construct corresponding systems that target miRNAs.</p>
+
+          <h3 class="">Filter colon tumor specific miRNA expression by modeling </h3>
+          <p>The work to find out specific miRNA expression profile starts with 2 questions:</p>
+          <p>• Which tumor should we focus on?</p>
+          <p>• What principles do we need to achieve screening?</p>
+          <p>When we first interviewed Dr. Huang, he has motivated us to apply our newly developed therapy to colon cancer. Because there is still a large gap in the precise treatment of colon cancer and new adjuvant therapy is urgently needed. So we use colon cancer as the first application case of our system.</p>
+          <p>With his encouragement, we began to analyze the miRNA expression profiles of colon cancer. An R language program was developed for miRNA filtering and we put forward some principles based on security and specific considerations. (For more details please refers to “Design”) Based on the above work, we successfully obtained miRNA expression profiles specifically expressed in colon cancer.</p>
+
+          <h3 class="">Review our target: Reduce potential off-target risk</h3>
+          <p>We obtained a specific miRNA expression in colon cancer by computer program analysis and showed our staged results to our PI Professor Lu Yongjun. He asked if we had checked the expression of these miRNAs between different tissues and asked us to further determine the credibility of the data. We were then surprised to find that the target miRNA profile determined initially had the same expression in sperm. More accurately, the high expression of miR-592 and the low expression of miR-885-5P found in colon cancer also occur in sperm, which means that our system may have potential off-target risks if we only use those two miRNAs above.</p>
+          <p>To reduce off-target effects, we need a miRNA that targets specific tissues. At this point we found miR663, a miRNA missing in colon-derived cells, which is highly expressed in sperm. After adding new miRNAs, we again examined the specificity of the new combination and found no similar miRNA expression patterns in all normal tissues.</p>
+          <img src="https://2019.igem.org/wiki/images/0/09/T--SYSU-CHINA--miRNA_in_tissue.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+
+          <h3 class="">miRNA-sensor: A synthetic RNA system to correspond miRNA target</h3>
+          <p>With the target, we need a set of targeting systems to identify miRNA expression. The work on the mRNA circuit by Professor Ron Weiss in MIT has helped us a lot. Based on the nature of mRNA degradation caused by miRNA binding to mRNA, they proposed an mRNA circuit consisting of two basic logic gate elements that respond to miRNA concentrations.</p>
+          <p>Based on this work, we constructed the basic elements that respond to the high and low expression of miRNAs, and used them to form logic gates to identify specific miRNA expression in colon cancer. (For more details please refers to “Design”)/p>
+            <img src="https://2019.igem.org/wiki/images/1/12/T--SYSU-CHINA--logic_gate.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+
+          <h3 class="">Surprise: Help from project and advisor in SYSU-CHINA 2013</h3>
+          <p>At this time, our PI Prof. Lu told us that our team SYSU-CHINA had done a similar work with iPSC in 2013 and their advisor Dr. Jiang Shuai is still working in our university. After learning about our project, Dr. Jiang pointed out the potential problem of this system at once —— Sponge Effect. The sponge effect means that the miRNA will suddenly increase or decrease under certain conditions. Since the mechanism is still unclear, almost all miRNA-related systems will be affected by it. </p>
+          <p>Based on the experience of SYSU-CHINA 2013, Dr. Jiang suggested that we could improve the sequence of mRNA and miRNA binding to reduce the effect of sponge effect. Based on his suggestions and other works in recent years, we made improvements to the miRNA binding sequence and shared this design concept with Central South University later.</p>
+          <p>Without his reminder, we might not have realized this problem yet. The previous work by SYSU-CHINA in 2013 really gives us a big surprise! </p>
+        </div>
+
+        <div>
+          <h2 id="c23">Deliver our system into cancer cell (Find out Deliverer)</h2>
+          <p>Since our system is constructed to recognize endogenous specific miRNAs, we need a drug delivery vector to bring the system into cancer cell. Such deliverer can be divided into two levels, one is what to use to carry the mRNA circuit at the cellular level, and the other is how to achieve the drug delivery in practical application.</p>
+          <p>It was about December, Wen Rou, one of our team members, happened to read an article "Adenoviral vector with shield and adapter increases tumor specificity and escapes liver and immune control." on Nature communications. This article brought the oncolytic virus in front of us and we were amazed to find that this system can not only act as a carrier, but also itself as an effector for killing tumors. This engineered virus can only be propagated in cancer cells and released after cell lysis to infect surrounding cancer cells. How amazing! We thought. It could be self-replicon guard to eliminate evil tumor cells in our body!</p>
+          <p>As the oncolytic virus is more of a conceptual idea, we need to identify a real virus as a modified chassis. After comparing different viruses (see “Design” for details), we chose adenovirus as the basic biological chassis.</p>
+          <img src="https://2019.igem.org/wiki/images/8/83/T--SYSU-CHINA--oncocomic.jpg" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+
+          <h3 class="">Safety concerns: Is it suitable to use a virus?</h3>
+          <p>Here comes another problem that the adenovirus is a BSL II creature and whether the use of it comply with regulations of iGEM competition? We emailed the organizing committee on this issue and received a warm response from Piers. Here, I would like to sincerely thank Piers for his kind assistance, with which we started to re-consider the security of our project.</p>
+          <p>We looked back at the iGEM projects over the past few years and found that there are not many examples on virus application. Obviously, this is a field full of doubts about security. Whether adenovirus should continue to serve as a biological chassis, we refer to three aspects for opinions: public concerns, doctors' opinions and relevant legal provisions.</p>
+          <p>A lot of work, such as interviews, questionnaires were conducted and released when trying to settle this urgent problem. Fortunately, we found that it is possible to promote our project into further clinical application if our design was truly proved effective. (See “Human Practices” for more details)</p>
+
+          <h3 class="">Mode of administration: How to apply it to future medical practice</h3>
+          <p>Considering the practical application of our system in the future, we need to design a viable mode of administration. Viral therapy is generally administered intravenously, and the FDA has strict regulations on the amount of virus injected. Since our first application case was colon cancer, which is exposed to the colon surface, we also considered two non-invasive modes of administration: enema and rectal suppositories. </p>
+          <p>At first we thought that enema could be used as a viable alternative to injection because it more accurately locates the colon. Since blood injection is not required, the risk of infection from injection also decrease, while the public's concerns about viral injections will be reduced as well.</p>
+          <p>However, Dr. Huang vetoed our mode of administration, when we brought our existing project to him with confidence once again. It turns out that although the enema could be administered locally, it stays in the intestine for too short a time, which results that the virus may not have enough chance to infect cancer cells. In addition, Dr. Huang introduced several new modes of administration and suggested that we should do a deep investigation about it. We then compared five potential modes of administration and selected a cutting-edge method recommended by Dr. Huang, which is called hydrogel-based drug delivery systems.(more details in “Future work” and “Human Pratice”)</p>
+
+        </div>
+
+        <div>
+          <h2 id="c24">Potential in Synthetic Biology</h2>
+          <p>In the end we will introduce the synthetic biology value of the above construction system, which is reflected in both medical applications and basic research.</p>
+
+          <h3 class="">Potential for multiple tumors by rapid adaptation </h3>
+          <p>Although we are temporarily focusing on colon cancer, this system theoretically has the potential to respond to all tumor cells. Since the target is a miRNA that is present in all cells, as long as any tumor-specific miRNA can be found, it can be suitable to our system with only modifying few miRNA target sequences. Combined with the mode of administration we envision, this system can be well applied to the treatment of various solid tumors in the future.</p>
+          <p>We also understand that oncolytic viruses can be combined with a variety of oncology and can enhance the effectiveness of other therapies. A new generation of oncolytic viruses and immune factors work together to make them more lethal. The oncolytic virus system we built is fully compatible with such improvements. As we use engineering ideas to build this system, it is very convenient and feasible to modify the different parts of the whole system.</p>
+
+          <h3 class="">Prospect in personalized treatment</h3>
+          <p>Most importantly, since the tumors showed large differences in different people, many molecular targets results vary. Our oncolytic virus system offers a potential for future personalized cancer treatment.</p>
+          <p>The doctor can first collect the patient's tumor sample to detect the expression of miRNA, and then use our computer analysis model to screen the miRNA specifically expressed in the individual tumor to construct a personalized oncolytic virus. There is no doubt that this personalized oncolytic virus is safer and more efficient.</p>
+
+          <h3 class="">Virus system responding to different levels of signals</h3>
+          <p>From another perspective, we have built a modular virus system that responds to different levels of regulation this year. First of all, our miR sensor, switch and virus vectors are highly modular which could acheive rapid update through synthetic biology method. </p>
+          <p>On the other hand, our system provides the possibility of simultaneous regulation at the transcriptional level and translation level. Gene expression can be regulated at the transcriptional level by the Tet-on system, and protein translation can be regulated at the mRNA level by miRNA sensor. This enriches the possibility of virus-mediated gene expression systems.</p>
+
+        </div>
+
+        <hr class="col-md-13">
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- Back to up Button-->
+<div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+	</span>
+</div>
+
+
+
+<!-- FOOTER -->
+<footer id="footer" class="page-footer">
+  <!--Footer Links-->
+  <div class="container text-center">
+    <div class="row1">
+      <!--First column-->
+      <div class="col-md-3 col-lg-2">
+        <h6 class="text-uppercase" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Links</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px;">
+            FAQ</a>
+        </p>
+      </div>
+      <!--/.First column-->
+      <!--Second column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold " style="color: #f9d26b; font-size: 16px; ">
+          <strong>Resources</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px; ">
+            SYSU</a>
+        </p>
+      </div>
+      <!--/.Second column-->
+      <!--Third column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Helper</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="/education/" style="color: #ffffff; font-size: 14px;">
+            Basics (HTML/CSS/JS)</a>
+        </p>
+      </div>
+      <!--/.Third column-->
+      <!--Fourth column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Company</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px;">
+            Our team</a>
+        </p>
+      </div>
+      <!--/.Fourth column-->
+    </div>
+  </div>
+  <!--/.Footer Links-->
+  <!-- Copyright-->
+  <div class="footer-copyright py-3 text-center">
+    <a href="http://2019.igem.org/Team:SYSU-CHINA" style="color: #f9d26b; font-size: 14px;">
+      2019 iGEM SYSU-CHINA
+    </a>
+  </div>
+  <!--/.Copyright -->
+</footer>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>-->
+<!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.min.js"><\/script>')</script>-->
+<!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.js"><\/script>')</script>-->
+<!-- <script src="../carousel/js/jquery.js"></script> -->
+
+
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../carousel/js/holder.min.js"></script>
+</body>
+</html>

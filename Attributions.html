@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Carousel Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../carousel/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+
+<!-- NAVBAR
+================================================== -->
+<body>
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://2019.igem.org/Team:SYSU-CHINA">
+            <img src="http://2019.igem.org/wiki/images/1/1f/T--SYSU-CHINA--title0.jpg" alt="logo"
+                 style="left:30px; width: 300px; height: 50px; ">
+          </a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right .navbar-fixed-top">
+            <!-- TEAM -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="#">Team Members</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Collaborations">Collaborations</a></li>
+                <li><a href="#">Awards</a></li>
+              </ul>
+            </li>
+
+            <!-- PROJECT -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true"
+                 aria-expanded="false">
+                PROJECT
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Description">Description</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Design">Design</a></li>
+                <li><a href="#">Experiments</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Measurement">Measurement</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Demonstrate">Demonstrate</a></li>
+                <li><a href="#">Improve</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Attributions">Attributions</a></li>
+              </ul>
+            </li>
+
+            <!-- Model -->
+            <li class="dropdown">
+              <a href="http://2019.igem.org/Team:SYSU-CHINA/Model" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Description">Description</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">R</a></li>
+              </ul>
+            </li>
+
+            <!-- PARTS -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Parts</a></li>
+                <li><a href="#">Part Collection</a></li>
+              </ul>
+            </li>
+
+            <!-- SAFETY -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                SAFETY
+              </a>
+            </li>
+
+            <!-- HUMAN PRACTICES -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false" style="width: 250px;">
+                HUMAN PRACTICES
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Human_Practices">Human Practices</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Human_Practices#IHP">Integrated Human Practices</a></li>
+              </ul>
+            </li>
+
+            <!-- AWARDS
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                AWARDS
+              </a>
+            </li>-->
+
+            <!-- OTHERS -->
+            <!--<li><a href="#contact">Contact</a></li>
+
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>-->
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+
+
+  <div class="carousel-inner" role="listbox">
+
+    <div id="mdback" class="item active">
+      <div class="container">
+
+        <div class="bg"></div>
+
+        <div class="carousel-caption" style="
+        margin-bottom: 10%;">
+          <h1 style="font-size: 64px;">Example headline</h1>
+        </div>
+
+        <!-- up to next Button-->
+        <div class="scroll-down-wrapper">
+          <span class="glyphicon glyphicon-chevron-down""></span>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div><!-- /.carousel -->
+</div>
+
+
+
+<!-- Begin Body -->
+<div class="mycontainer" id="mycontentcon">
+  <div class="row">
+    <!--SideBar-->
+    <div class="col-md-2">
+
+      <div class="list-group navbar" id="sidebar">
+        <ul class="nav mynav" data-spy="affix" data-offset-top="0px">
+          <li><a href="#t" class="list-group-item" style="
+          height: 40px;
+          text-align: center;
+          vertical-align: center;
+          border-top: 7px solid #f0ad4e !important;
+          border-left: 5px solid #f0ad4e !important;
+          border-right: 3px solid #f0ad4e !important;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 0 !important;
+          padding-right: 0 !important;">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar" >
+                <span class="progress-value">Attributions</span>
+              </div>
+            </div>
+          </a>
+          </li>
+          <li><a href="#c1" class="list-group-item" style="border-top: 3px solid #f0ad4e !important; ">
+            Contribution
+          </a>
+          </li>
+          <li> <a href="#c2" class="list-group-item" contenteditable="false">
+            Acknowlegement
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-9" id="mycontent">
+      <h1 id="t" class="">Attributions</h1>
+      <hr class="col-md-12">
+
+      <div>
+      <h2 id="c1" class="">Contribution</h2>
+
+      <h3 class="">Molecular experiments:</h3>
+      <p> Design and construction of plasmids of Tet-on system: Zhou shuaixi, Huang Ao, Huang Junyu</p>
+      <p> Design and construction of plasmids of L7Ae-Kturn system: Chen Jionglin, Wen Rou, Huang Wanying</p>
+      <p> Design and construction of plasmids of miRNA sensors:Chen Jionglin, Xu Jiaxian, Huang Junyu</p>
+      <p> Design and construction of plasmids of adenovirus response element: Wu Zhien, Gao Shangfang, Liu Lanjun</p>
+      <p> Operation of AdEasyTM adenovirus system: Wu Zhien, Gao Shangfang, Zhou Shuaixi</p>
+      <p> Helpers: Zhao Bingnan, Wang Jiaxin, He Yuansi</p>
+
+      <h3 class="">Cell culturing: </h3>
+      <p> Cell culturing and passaging of HEK293 and HeLa:  Gao Shangfang, Chen Jionglin, Huang Junyu</p>
+      <p> Transfection, cytotoxicity and efficiency measurement:  Chen Jionglin, Gao Shangfang</p>
+      <p> Packaging of adenovirus:  Gao Shangfang, Wu Zhien</p>
+
+      <h3 class="">Mathematical work: </h3>
+      <p> Modeling: Liang Jiaqi, Chang Yanqi, Chen Jionglin, Wang Chengwei</p>
+      <p> Data analysis: Chang Yanqi, Chen Jionglin</p>
+
+      <h3 class="">Human Practice: </h3>
+      <p>Huang Junyu, Huang Ao, Wen Rou, Chang Yanqi, Huang Wanying, Chen Jionglin, Lu Yalin, Liu Lanjun, Wu Zhien, Xu Jiaxian</p>
+
+      <h3 class="">Art design: </h3>
+      <p>Liu Lanjun, Lu Yalin, Chen Jionglin, Wang Jiaxin, Huang Wanying </p>
+
+      <h3 class="">Wiki design and web development: </h3>
+      <p>Wang Chengwei</p>
+        </div>
+
+      <div>
+      <h2 id="c2" class="">Acknowlegement</h2>
+      <p>In the process of our project, SYSU-China has received help and support from many teachers, experts and academic sisters and brothers. We would like to extend our sincere respect and gratitude to them.</p>
+
+      <h3 class="">Lab Support: </h3>
+      <p>We appreciate molecular and cellular microbiology lab of Sun Yat-Sen University for the full range of laboratory sites, equipment and materials. Mr. Shen Dong, Mr. He Lei, Ms. Chen Dongni, Mr. Yuan Peibo, Mr. Ge Zhenhuang, Ms. He Shiyu, Mr. Wang Qinglin and Ms. Long Qinsha of the laboratory gave us warm guidance and instruction. Their valuable experience inspired us a lot in design and execution of experiments. When we were in trouble, they kindly gave us useful advice to tide us over. Without their strong support, our experiment would hardly go on smoothly. Especially we want to show our gratitude to Mr. Yuan Peibo, who offered us pcDNA3.1 carrier and enlighted us on some molecular experiments, and Ms. Chen Dongni, who offered us HEK293 and HeLa cell lines and related protocols on cell experiment. </p>
+      <p>Thanks to our co-lab's partner, CSU-China, for their assistance in completing miRNA quantitative measurement experiments.</p>
+
+      <h3 class="">Human Practice: </h3>
+      <p>We also received many helping hands when we carried on human practice work, which greatly filled our knowledge gap in related fields. We would like to thank Prof. Lee TienMing (School of Life Sciences, Sun Yat-Sen University) for his professional guidance on social investigation methods, which has greatly promoted the progress of our public engagement. Thanks to Dr. Huang Rongkang and Dr. Zhi Min (The Sixth Affiliated Hospital, Sun Yat-Sen University & Guangdong Gastrointestinal Hospital), accepted our interview twice and answered many problems about current situations of cancer therapies and patients’ attitude, promoting our project idea. We are also very grateful to other researchers working on microRNA and onolytic virus in our university for their suggestions and comments to unearth hidden problems and risks in our project.</p>
+
+
+      <h3 class="">Funding and sponsorship: </h3>
+      <p>Special thanks to School of Life Sciences of Sun Yat-Sen University for the fund support, and all relevant teachers and administrators for their hard work. Thanks to the Clone it project of GeneScript® for its sponsorship of Gibson Assembly reagent.</p>
+
+      <h3 class="">Our dear advisor: </h3>
+      <p>Finally, we want to express our super gratitude to our dear advisor Prof. Lu Yongjun for his close attention and full support to our work. Mr. Lu not only edified us to determine the details and control the progress of our project, but also cared our lab life and helped us to solve funding problems. Without him, we could never achieve what we have today.</p>
+      <p>Once again, SYSU-China would like to express our sincerest respect and thanks to all the people who have given us help and support. We worked together to create this year's project! Thanks a lot!</p>
+        </div>
+
+      <hr class="col-md-13">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Back to up Button-->
+<div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+	</span>
+</div>
+
+
+<!-- FOOTER -->
+<footer id="footer" class="page-footer">
+  <!--Footer Links-->
+  <div class="container text-center">
+    <div class="row1">
+      <!--First column-->
+      <div class="col-md-3 col-lg-2">
+        <h6 class="text-uppercase" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Links</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px;">
+            FAQ</a>
+        </p>
+      </div>
+      <!--/.First column-->
+      <!--Second column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold " style="color: #f9d26b; font-size: 16px; ">
+          <strong>Resources</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px; ">
+            SYSU</a>
+        </p>
+      </div>
+      <!--/.Second column-->
+      <!--Third column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Helper</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="/education/" style="color: #ffffff; font-size: 14px;">
+            Basics (HTML/CSS/JS)</a>
+        </p>
+      </div>
+      <!--/.Third column-->
+      <!--Fourth column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Company</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px;">
+            Our team</a>
+        </p>
+      </div>
+      <!--/.Fourth column-->
+    </div>
+  </div>
+  <!--/.Footer Links-->
+  <!-- Copyright-->
+  <div class="footer-copyright py-3 text-center">
+    <a href="http://2019.igem.org/Team:SYSU-CHINA" style="color: #f9d26b; font-size: 14px;">
+      2019 iGEM SYSU-CHINA
+    </a>
+  </div>
+  <!--/.Copyright -->
+</footer>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>-->
+<!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.min.js"><\/script>')</script>-->
+<!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.js"><\/script>')</script>-->
+
+<script src="../carousel/js/jquery.min.js"></script>
+<!-- <script src="../carousel/js/jquery.js"></script> -->
+<script src="../carousel/js/bootstrap.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../carousel/js/holder.min.js"></script>
+</body>
+</html>

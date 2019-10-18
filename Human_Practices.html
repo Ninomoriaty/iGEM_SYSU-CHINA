@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Carousel Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../carousel/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+
+<!-- NAVBAR
+================================================== -->
+<body>
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://2019.igem.org/Team:SYSU-CHINA">
+            <img src="http://2019.igem.org/wiki/images/1/1f/T--SYSU-CHINA--title0.jpg" alt="logo"
+                 style="left:30px; width: 300px; height: 50px; ">
+          </a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right .navbar-fixed-top">
+            <!-- TEAM -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="#">Team Members</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Collaborations">Collaborations</a></li>
+                <li><a href="#">Awards</a></li>
+              </ul>
+            </li>
+
+            <!-- PROJECT -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true"
+                 aria-expanded="false">
+                PROJECT
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Description">Description</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Design">Design</a></li>
+                <li><a href="#">Experiments</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Measurement">Measurement</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Demonstrate">Demonstrate</a></li>
+                <li><a href="#">Improve</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Attributions">Attributions</a></li>
+              </ul>
+            </li>
+
+            <!-- Model -->
+            <li class="dropdown">
+              <a href="http://2019.igem.org/Team:SYSU-CHINA/Model" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Description">Description</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">R</a></li>
+              </ul>
+            </li>
+
+            <!-- PARTS -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Parts</a></li>
+                <li><a href="#">Part Collection</a></li>
+              </ul>
+            </li>
+
+            <!-- SAFETY -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                SAFETY
+              </a>
+            </li>
+
+            <!-- HUMAN PRACTICES -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false" style="width: 250px;">
+                HUMAN PRACTICES
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Human_Practices">Human Practices</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Human_Practices#IHP">Integrated Human Practices</a></li>
+              </ul>
+            </li>
+
+            <!-- AWARDS
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                AWARDS
+              </a>
+            </li>-->
+
+            <!-- OTHERS -->
+            <!--<li><a href="#contact">Contact</a></li>
+
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>-->
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+
+
+  <div class="carousel-inner" role="listbox">
+
+    <div id="mdback" class="item active">
+      <div class="container">
+
+        <div class="bg"></div>
+
+        <div class="carousel-caption" style="
+        margin-bottom: 10%;">
+          <h1 style="font-size: 64px;">Example headline</h1>
+        </div>
+
+        <!-- up to next Button-->
+        <div class="scroll-down-wrapper">
+          <span class="glyphicon glyphicon-chevron-down""></span>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div><!-- /.carousel -->
+</div>
+
+
+
+<div class="col-md-15">
+  <button type="button" class="btn btn-primary hpstyle"
+          data-toggle="button"  style="
+          width: 300px;
+          margin-right: 80px;
+          font-size: 25px;
+          margin-left: 10%;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;"> <a style="color: white;" href="#hphp">Human Practices</a>
+  </button>
+
+  <button type="button" class="btn btn-primary hpstyle"
+          data-toggle="button" style="
+          width: 250px;
+          margin-right: 80px;
+          font-size: 25px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;"> <a style="color: white;" href="#Collaborations">Collaborations</a>
+  </button>
+
+  <button type="button" class="btn btn-primary hpstyle"
+          data-toggle="button"  style="
+          width: 400px;
+          margin-right: 80px;
+          font-size: 25px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;"> <a style="color: white;" href="#IHP">Integrated Human Practices</a>
+  </button>
+
+  <hr id="hphp" class="col-md-14">
+</div>
+
+
+<div class="mycontainer" id="mycontent" style="margin-top: 1%;">
+  <p class="hptitle" style="margin-top: 5%; margin-left: 3%">Human Practices</p>
+  <div class="row">
+    <div class="col-md-2">
+<ul id="myTab" class="nav nav-tabs nav-pills nav-stacked" data-spy="affix"">
+  <li class="hptab active">
+    <a href="#home" data-toggle="tab" style="color: #333333;">
+      Hello,
+    </a>
+  </li>
+  <li class="hptab">
+    <a href="#ios" data-toggle="tab" style="color: #333333;">
+      World
+    </a>
+  </li>
+</ul>
+    </div>
+
+    <div class="col-md-9" id="mycontenthp" style="background-color: white; border-left: none; padding: 0; width: 82% !important;">
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade in active" id="home">
+    <p>
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+    </p>
+  </div>
+  <div class="tab-pane fade" id="ios">
+    <p>
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+      PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+    </p>
+  </div>
+</div>
+    </div>
+
+  </div>
+  <hr id="Collaborations" class="col-md-14">
+</div>
+
+
+
+
+
+
+
+<p class="hptitle" style="margin-top: 5%;">Collaborations</p>
+
+<!-- Begin Body -->
+<div class="mycontainer" id=mycontentcon" style="margin-top: 0 !important;">
+<div class="row">
+
+  <div class="col-md-9 tab-content" id="mycontentcolla" style="
+  border-left: 0px;
+  border-left:0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;">
+
+
+<div id="accordion">
+
+
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed hpstyle"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+                style="
+                font-size: 25px;
+                border-top: 5px solid #FFB700;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;">
+          Collapsible Group Item #1
+        </button>
+      </h5>
+    </div>
+    <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed hpstyle"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+                style="font-size: 25px;">
+          Collapsible Group Item #2
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button
+          class="btn btn-link collapsed hpstyle"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+                style="
+                font-size: 5px;
+                border-bottom: 5px solid #FFB700;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;">
+          .
+        </button>
+      </h5>
+    </div>
+
+  </div>
+</div>
+  </div>
+</div>
+  <hr id="IHP" class="col-md-14">
+</div>
+
+
+
+
+
+<p class="hptitle" style="margin-top: 5%;">Integrated Human Practices</p>
+
+<div class="container">
+
+  <div id="timeline">
+    <div class="row timeline-movement timeline-movement-top">
+
+    <div class="timeline-badge timeline-future-movement">
+      <a href="#">
+        <span class="glyphicon glyphicon-time"></span>
+      </a>
+    </div>
+
+  </div>
+
+    <div class="row timeline-movement">
+
+      <div class="timeline-badge">
+        <span class="timeline-balloon-date-day">18</span>
+        <span class="timeline-balloon-date-month">APR</span>
+      </div>
+
+
+      <div class="col-sm-6  timeline-item">
+        <div class="row">
+          <div class="col-sm-11">
+            <div class="timeline-panel credits btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+
+              <ul class="timeline-panel-ul">
+                <li><span class="importo">Huang Junyu met his girlfriend</span></li>
+                <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
+                <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
+             </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6  timeline-item">
+        <div class="row">
+          <div class="col-sm-offset-1 col-sm-11">
+            <div class="timeline-panel debits">
+
+              <ul class="timeline-panel-ul">
+                <li><span class="importo">Mussum ipsum cacilds</span></li>
+                <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
+                <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--due -->
+
+    <div class="row timeline-movement">
+
+
+      <div class="timeline-badge">
+        <span class="timeline-balloon-date-day">13</span>
+        <span class="timeline-balloon-date-month">APR</span>
+      </div>
+
+      <div class="col-sm-offset-6 col-sm-6  timeline-item">
+        <div class="row">
+          <div class="col-sm-offset-1 col-sm-11">
+            <div class="timeline-panel debits btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+
+              <ul class="timeline-panel-ul">
+                <li><span class="importo">2Mussum ipsum cacilds</span></li>
+                <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
+                <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6  timeline-item">
+        <div class="row">
+          <div class="col-sm-11">
+            <div class="timeline-panel credits">
+
+              <ul class="timeline-panel-ul">
+                <li><span class="importo">3Mussusdfdsfsdfsdfsdfdsilds</span></li>
+                <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
+                <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row timeline-movement">
+
+
+      <div class="timeline-badge">
+        <span class="timeline-balloon-date-day">10</span>
+        <span class="timeline-balloon-date-month">APR</span>
+      </div>
+
+      <div class="col-sm-offset-6 col-sm-6  timeline-item">
+        <div class="row">
+          <div class="col-sm-offset-1 col-sm-11">
+            <div class="timeline-panel debits">
+              <ul class="timeline-panel-ul">
+                <li><span class="importo">4Mussum ipsasdfasdfadsfadsfdslds</span></li>
+                <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
+                <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6  timeline-item">
+        <div class="row">
+          <div class="col-sm-11">
+            <div class="timeline-panel credits">
+              <ul class="timeline-panel-ul">
+                <li><span class="importo">5Mussum ipsum cacilds</span></li>
+                <li><span class="causale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> </li>
+                <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11/09/2014</small></p> </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="padding-right: 0.3% !important;">
+  <div class="modal-dialog" style="margin-left: 10% !important; margin-right: 15% !important;">
+    <div class="modal-content" style="width: 100%;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          &times;
+        </button>
+        <h4 class="modal-title" id="myModalLabel">
+          Huang Junyu met his girlfriend
+        </h4>
+      </div>
+      <div class="modal-body">
+        Huang Junyu met his girlfriend.
+        Huang Junyu met his girlfriend.
+        Huang Junyu met his girlfriend.
+        Huang Junyu met his girlfriend.
+        Huang Junyu met his girlfriend.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" style="border: none !important;">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary" style="background-color: #f0ad4e; border: none !important;">
+          Questionare
+        </button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Back to up Button-->
+<div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+	</span>
+</div>
+
+
+<!-- FOOTER -->
+<footer id="footer" class="page-footer">
+  <!--Footer Links-->
+  <div class="container text-center">
+    <div class="row1">
+      <!--First column-->
+      <div class="col-md-3 col-lg-2">
+        <h6 class="text-uppercase" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Links</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px;">
+            FAQ</a>
+        </p>
+      </div>
+      <!--/.First column-->
+      <!--Second column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold " style="color: #f9d26b; font-size: 16px; ">
+          <strong>Resources</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px; ">
+            SYSU</a>
+        </p>
+      </div>
+      <!--/.Second column-->
+      <!--Third column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Helper</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="/education/" style="color: #ffffff; font-size: 14px;">
+            Basics (HTML/CSS/JS)</a>
+        </p>
+      </div>
+      <!--/.Third column-->
+      <!--Fourth column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Company</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px;">
+            Our team</a>
+        </p>
+      </div>
+      <!--/.Fourth column-->
+    </div>
+  </div>
+  <!--/.Footer Links-->
+  <!-- Copyright-->
+  <div class="footer-copyright py-3 text-center">
+    <a href="http://2019.igem.org/Team:SYSU-CHINA" style="color: #f9d26b; font-size: 14px;">
+      2019 iGEM SYSU-CHINA
+    </a>
+  </div>
+  <!--/.Copyright -->
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>-->
+<!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.min.js"><\/script>')</script>-->
+<!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.js"><\/script>')</script>-->
+
+<script src="../carousel/js/jquery.min.js"></script>
+<!-- <script src="../carousel/js/jquery.js"></script> -->
+<script src="../carousel/js/bootstrap.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../carousel/js/holder.min.js"></script>
+</body>
+</html>

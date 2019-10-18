@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Carousel Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../carousel/css/bootstrap.css" rel="stylesheet">
+  <script src="../carousel/js/jquery.min.js"></script>
+  <!-- <script src="../carousel/js/jquery.js"></script> -->
+  <script src="../carousel/js/bootstrap.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+
+<!-- NAVBAR
+================================================== -->
+<body>
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://2019.igem.org/Team:SYSU-CHINA">
+            <img src="http://2019.igem.org/wiki/images/1/1f/T--SYSU-CHINA--title0.jpg" alt="logo"
+                 style="left:30px; width: 300px; height: 50px; ">
+          </a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right .navbar-fixed-top">
+            <!-- TEAM -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="#">Team Members</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Collaborations">Collaborations</a></li>
+                <li><a href="#">Awards</a></li>
+              </ul>
+            </li>
+
+            <!-- PROJECT -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true"
+                 aria-expanded="false">
+                PROJECT
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Description">Description</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Experiments</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Measurement">Measurement</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Demonstrate">Demonstrate</a></li>
+                <li><a href="#">Improve</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Attributions">Attributions</a></li>
+              </ul>
+            </li>
+
+            <!-- Model -->
+            <li class="dropdown">
+              <a href="http://2019.igem.org/Team:SYSU-CHINA/Model" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Description">Description</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">R</a></li>
+              </ul>
+            </li>
+
+            <!-- PARTS -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Parts</a></li>
+                <li><a href="#">Part Collection</a></li>
+              </ul>
+            </li>
+
+            <!-- SAFETY -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                SAFETY
+              </a>
+            </li>
+
+            <!-- HUMAN PRACTICES -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false" style="width: 250px;">
+                HUMAN PRACTICES
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Human_Practices">Human Practices</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Human_Practices#IHP">Integrated Human Practices</a></li>
+              </ul>
+            </li>
+
+            <!-- AWARDS
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                AWARDS
+              </a>
+            </li>-->
+
+            <!-- OTHERS -->
+            <!--<li><a href="#contact">Contact</a></li>
+
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>-->
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+
+<!-- Begin Body -->
+<div class="mycontainer" id="mycontentcon">
+  <div class="row">
+    <!--SideBar-->
+    <div class="col-md-2">
+      <ul class="nav mynav" data-spy="affix" data-offset-top="0px">
+      <ul id="main-nav" class="nav nav-tabs nav-stacked" style="">
+        <li class="active">
+          <a href="#">
+            <i class="glyphicon glyphicon-th-large"></i>
+            首页
+          </a>
+        </li>
+
+        <li>
+          <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-cog"></i>
+            系统管理
+            <span class="pull-right glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul id="systemSetting" class="nav nav-list collapse secondmenu" style="height: 0px;">
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>菜单管理</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>角色管理</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-edit"></i>修改密码</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>日志查看</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#systemSetting1" class="nav-header collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-cog"></i>
+            系统管理
+            <span class="pull-right glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul id="systemSetting1" class="nav nav-list collapse secondmenu" style="height: 0px;">
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>菜单管理</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>角色管理</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-edit"></i>修改密码</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>日志查看</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#systemSetting2" class="nav-header collapsed" data-toggle="collapse">
+            <i class="glyphicon glyphicon-cog"></i>
+            系统管理
+            <span class="pull-right glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul id="systemSetting2" class="nav nav-list collapse secondmenu" style="height: 0px;">
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>菜单管理</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>角色管理</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-edit"></i>修改密码</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>日志查看</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      </ul>
+    </div>
+
+    <div class="col-md-9" id="mycontent">
+      <h1 id="t" class="" style="font-weight: 800;">Description</h1>
+      <hr class="col-md-12">
+      <p>Although China and many developed countries have spent huge sums of money and a lot of manpower on research to overcome cancer, the "incurable disease" cancer still seriously threatens the health of human beings. According to the National Cancer Center of China, in 2014, the number of new cases of malignant tumors in China reached 3.804 million (2.114 million males and 1.69 million females), and an average of 7 people per minute were diagnosed with cancer <sup>[1]</sup>. The infinite ability of tumor cells to replicate, sustained angiogenesis, immune tolerance and other characteristics have led to clinical treatment difficulties <sup>[2]</sup>. Therefore, there is an urgent need for a new type of therapy that has a good effect on preventing tumor recurrence and metastasis. This therapy is expected to be less prone to drug resistance, safe and reliable, with mild side effects, and at the same time improve the tumor's own anti-tumor immune function. </p>
+      <br>
+
+      <div>
+        <h2 id="c1" class="">miRNA</h2>
+        <p>MicroRNAs (miRNAs) are a class of non-coding single-stranded RNA molecules of approximately 22 nucleotides in length encoded by endogenous genes. Such RNAs play a role in post-transcriptional regulation of gene expression, and they are powerful regulators of various cellular activities, including regulation of cell growth, differentiation, development, and apoptosis.   </p>
+        <p>Currently, miRNAs have been shown to be abnormally expressed in different cancer types and can play an important role in resembling oncogenes or tumor suppressor genes. In recent years, the rapid development of molecular medicine has led to the discovery and application of a large number of tumor markers in clinical practice, which has led to a significant increase in the early diagnosis rate and prognosis of many tumor diseases. <sup>[3-5]</sup> </p>
+        <br>
+        <hr class="col-md-13">
+      </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Back to up Button-->
+<div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+	</span>
+</div>
+
+<!-- up to next Button-->
+<div class="scroll-down-wrapper">
+		<span class="glyphicon glyphicon-chevron-down""></span>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer" class="page-footer">
+  <!--Footer Links-->
+  <div class="container text-center">
+    <div class="row1">
+      <!--First column-->
+      <div class="col-md-3 col-lg-2">
+        <h6 class="text-uppercase" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Links</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px;">
+            FAQ</a>
+        </p>
+      </div>
+      <!--/.First column-->
+      <!--Second column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold " style="color: #f9d26b; font-size: 16px; ">
+          <strong>Resources</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px; ">
+            SYSU</a>
+        </p>
+      </div>
+      <!--/.Second column-->
+      <!--Third column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Helper</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="/education/" style="color: #ffffff; font-size: 14px;">
+            Basics (HTML/CSS/JS)</a>
+        </p>
+      </div>
+      <!--/.Third column-->
+      <!--Fourth column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Company</strong>
+        </h6>
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 14px;">
+            Our team</a>
+        </p>
+      </div>
+      <!--/.Fourth column-->
+    </div>
+  </div>
+  <!--/.Footer Links-->
+  <!-- Copyright-->
+  <div class="footer-copyright py-3 text-center">
+    <a href="http://2019.igem.org/Team:SYSU-CHINA" style="color: #f9d26b; font-size: 14px;">
+      2019 iGEM SYSU-CHINA
+    </a>
+  </div>
+  <!--/.Copyright -->
+</footer>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>-->
+<!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.min.js"><\/script>')</script>-->
+<!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.js"><\/script>')</script>-->
+
+
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../carousel/js/holder.min.js"></script>
+</body>
+</html>
+
