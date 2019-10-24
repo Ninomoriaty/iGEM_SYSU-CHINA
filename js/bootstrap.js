@@ -9,6 +9,20 @@ if (typeof jQuery === 'undefined') {
 }
 
 
+/*! TEAM special*/
+$('document').ready(function() {
+  var popOverSettings = {
+    placement: 'top',
+    selector: '.icon',
+    title:'Brandable',
+    trigger: "hover",
+    content:'This is a popover'
+  };
+  $(this).popover(popOverSettings);
+});
+
+
+
 /*! HP special*/
 $('#myTab a').hover(function (e) {
   e.preventDefault();
@@ -206,7 +220,7 @@ function scrollToDown() {
   verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
   element = $('.mycontainer');
   offset = element.offset();
-  offsetTop = offset.top;
+  offsetTop = offset.top - 100;
   $('html, .mycontainer').animate({scrollTop: offsetTop}, 500, 'linear');
 }
 

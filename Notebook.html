@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Carousel Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../carousel/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+
+
+  <div class="carousel-inner" role="listbox">
+
+    <div id="pjback" class="item active">
+      <div class="container">
+
+        <div class="bg"></div>
+
+        <div class="carousel-caption" style="
+        margin-bottom: 10%;">
+          <h1 class="hugetitle">Notebook</h1>
+        </div>
+
+        <!-- up to next Button-->
+        <div class="scroll-down-wrapper">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div><!-- /.carousel -->
+</div>
+
+
+
+<!-- Begin Body -->
+<div class="mycontainer" id="mycontentcon">
+  <div class="row">
+    <!--SideBar-->
+    <div class="col-md-2">
+      <div class="list-group navbar" id="sidebar">
+        <ul class="nav mynav" data-spy="affix" data-offset-top="0px">
+          <li><a href="#t" class="list-group-item" style="
+          height: 40px;
+          text-align: center;
+          vertical-align: center;
+          border-top: 7px solid #f0ad4e !important;
+          border-left: 5px solid #f0ad4e !important;
+          border-right: 3px solid #f0ad4e !important;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 0 !important;
+          padding-right: 0 !important;">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar" >
+                <span class="progress-value">Record</span>
+              </div>
+            </div>
+          </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-9" id="mycontent">
+      <div>
+        <h1 id="t" class="">Molecular Experiment Record</h1>
+        <hr class="col-md-12">
+        <h3>2019.5.18</h3>
+        <p> Streak E.coli containing pL7Ae and pL7AeMUT onto the LB plate. After 14 hours, pick a single colony and patch it to a new plate.</p>
+        <p></p>
+        <h3>2019.5.19</h3>
+        <p>1. Colony PCR </p>
+        <p> Primers: L7Ae-F-KpnI and L7Ae-R-BamHI primers </p>
+        <p> Enzyme: Taq </p>
+        <p>2. Detection by agarose gel electrophoresis: negative.</p>
+        <p>Analysis: Primer design error, the restriction enzyme cutting site is in the 3' end of the primer</p>
+        <p></p>
+        <h3>2019.5.26</h3>
+        <p>1. Cultivate the bacteria to be ready for extracting pL7Ae and pL7AeMUT:</p>
+        <p> Escherichia coli containing pL7Ae and pL7AeMUT was inoculated in 3L Amp+ LB medium at 37 °C overnight.</p>
+        <p>2. Screen positive bacteria:</p>
+        <p> Streak E.coli containing pL7Ae and pL7AeMUT on the LB plate. After 14 hours, pick a single colony and patch it to a new plate. After 12 hours of incubation, the patch plate was stored at 4 ° C for detection.</p>
+        <p></p>
+        <h3>2019.5.27</h3>
+        <p>1. Extraction of plasmid: Plasmid pL7Ae and pL7AeMUT were extracted using Omega E.Z.N.A Plasmid Mini Kit.</p>
+        <p>2. DNA concentration determination: L7Ae (69.1 ng / μL) ; L7AeMUT (54.3 ng / μL)</p>
+        <p></p>
+        <h3>2019.5.31</h3>
+        <p>1. PCR amplification:</p>
+        <p> L7Ae and L7AeMUT were amplified by PCR using Phata enzyme and BamHI/XhoI enzyme cutting site and Myc tag were introduced. The primers are as follows:</p>
+        <p> L7Ae-Fw-BamHI: 5'-AAGGATCCATCATATGCGGCCGCTTATGTACGTGAGATTTGAGG-3’</p>
+        <p>L7Ae-Re-Myc-XhoI:5'-CTCGAGTTAATTCAGATCCTCTTCTGAGATGAGTTTTTGTTCGAAGGGCCCTCTAGACTCCTTCTGAAGGCCTTTAATCTT-3’</p>
+        <p>2. Identification by agarose gel electrophoresis: the amount of product should be 440 bp, but the band is too wide, so consider increasing the annealing temperature and re-PCR </p>
+        <p></p>
+        <h3>2019.6.1</h3>
+        <p>1. PCR amplification under improved conditions: Amplify L7Ae and L7AeMUT using the above primers, and increase the annealing temperature to 58 °C for higher amplification specificity.</p>
+        <p>2. Agarose gel electrophoresis: higher band specificity was shown. </p>
+        <p>3. Gel extraction:
+          The target product was extracted with omega Gel Extraction Kit to obtain L7Ae-Myc and L7AeMUT-Myc DNA fragments. Store at 4 ° C. </p>
+        <p></p>
+        <h3>2019.6.2</h3>
+        <p>1.DNA concentration detection: UV spectrophotometer detects the concentration of  extracted L7Ae-Myc and L7AeMUT-Myc fragments:
+          L7Ae-Myc: 169 ng/μL; L7AeMUT-Myc: 116 ng/μL</p>
+        <p>2. Digestion: double enzyme digestion of pcDNA3.1, L7Ae-Myc, L7AeMUT-Myc. The systems are as follows (unit μL):</p>
+        <p>&nbsp;</p>
+        <img src="https://2019.igem.org/wiki/images/d/d0/T--SYSU-CHINA--E1.jpg" style="width:40%; position: relative; margin-left: 30%; margin-right: 30%;">
+        <p>&nbsp;</p>
+        <img src="https://2019.igem.org/wiki/images/2/2f/T--SYSU-CHINA--E2%282%29.jpg" style="width:40%; position: relative; margin-left: 30%; margin-right: 30%;">
+        <p>&nbsp;</p>
+        <p> React for two hours at room temperature. Heat in a 70 °C water bath for 10 min to inactivate enzyme.</p>
+        <p>2. Separation of the digested product by agarose gel electrophoresis:</p>
+        <p> Only the pcDNA3.1 product was seen, and no L7Ae-Myc and L7AeMUT-Myc fragments were found, which were suspected to be lost during the gel recovery process.</p>
+        <p>3. Re-PCR amplification</p>
+        <p> The L7Ae and L7AeMUT were re-amplified using primers L7Ae-Fw-BamHI and L7Ae-Re-Myc-XhoI, and the annealing temperature was set to 57 ° C to increase the amplification specificity. The system is as follows (unit μL):</p>
+        <p>&nbsp;</p>
+        <img src="https://2019.igem.org/wiki/images/9/93/T--SYSU-CHINA--E3.jpg" style="width:40%; position: relative; margin-left: 30%; margin-right: 30%;">
+        <p>&nbsp;</p>
+        <p>4. Detection of recovered product by agarose gel electrophoresis</p>
+        <p> Products: L7Ae-Myc and L7AeMUT-Myc both showed the target band</p>
+        <p>5. Gel extraction:</p>
+        <p> The target product was extracted with omega Gel Extraction Kit to obtain L7Ae-Myc (GSF) and L7AeMUT-Myc (GSF) DNA fragments, which were stored at 4 ° C.</p>
+        <p>6. DNA concentration detection: UV spectrophotometer detects the extracted L7Ae-Myc (GSF) and L7AeMUT-Myc (GSF) fragments:</p>
+        <p> L7Ae-Myc (GSF): 160 ng/μL; L7AeMUT-Myc (GSF): 110 ng/μL</p>
+        <p>7. Colony PCR </p>
+        <p>Use the 5.26 preserved patch plate, pick L7Ae and L7AeMUT positive for colony PCR amplification, using primers:</p>
+        <p> L7Ae-Text-Fw: ATGTACGTGAGATTTGAGGTTC</p>
+        <p> L7Ae-Text-Re: TTACTTCTGAAGGCCTTTAATCTT </p>
+        <p>8. Agarose gel electrophoresis test:</p>
+        <p> All positive</p>
+        <p>9. Amplify positive clones to be ready for preservation</p>
+        <p>L7Ae and L7AeMUT positive clones were inoculated to 5 mL of Amp+ (1000x) LB liquid medium, and shaken at 37 ° C overnight.</p>
+        <p></p>
+        <h3>2019.6.3</h3>
+        <p>1. Conservation of DH5α-L7Ae and DH5α-L7AeMUT </p>
+        <p>2 tubes of DH5α-L7Ae and DH5α-L7AeMUT were stored in 15% glycerol and placed at -80 °C</p>
+        <p>2. The overnight digestion product was collected and inactivated in a water bath at 70 ° C for 10 min. Only the pcDNA3.0 band could be seen. No gene fragment band.</p>
+        <p>3. Improve digestion condition</p>
+        <p> According to NEB protocol, the enzyme should be digested for 5-15 minutes. Considering the lower enzyme digestion efficiency of XhoI, the enzyme digestion was carried out in the same system for 25 minutes at room temperature and 5 minutes at 65 °C.</p>
+        <p>4. Column extract product</p>
+        <p> Directly extract the digested products L7Ae-Myc-BamHI-XhoI and L7AeMUT-Myc-BamHI-XhoI (undetermined concentration) using Omega Gel Extraction Kit </p>
+        <p>5. T4 ligase connection</p>
+        <p>The T4 ligase was used to link the gene to the vector. Since the concentration was not determined, the following system did not conform to the gene: vector >3:1 recommendation.</p>
+        <p>The system is as follows (unit μL):</p>
+        <p>&nbsp;</p>
+        <img src="https://2019.igem.org/wiki/images/3/38/T--SYSU-CHINA--E4.jpg" style="width:40%; position: relative; margin-left: 30%; margin-right: 30%;">
+        <p>&nbsp;</p>
+        <p> After 1 h incubation at room temperature, the reaction was terminated by inactivation at 65 ° C for 5 min. Product stored at 4 ° C</p>
+        <p></p>
+        <h3>2019.6.4</h3>
+        <p>1. Column extract product</p>
+        <p> Extract the enzymatically linked products pcDNA3.1-L7Ae-Myc-BamHI-XhoI and pcDNA3.1-L7AeMUT-Myc using Omega Gel Extraction Kit</p>
+        <p>2. Escherichia coli DH5α plasmid transformation</p>
+        <p>Two tubes of DH5α competent were taken and the ligated plasmids pcDNA3.1-L7Ae-Myc-BamHI-XhoI and pcDNA3.1-L7AeMUT-Myc were transformed, respectively.
+          The system is as follows:</p>
+        <p>&nbsp;</p>
+        <img src="https://2019.igem.org/wiki/images/c/c5/T--SYSU-CHINA--EXP4.jpg" style="width:40%; position: relative; margin-left: 30%; margin-right: 30%;">
+        <p>&nbsp;</p>
+        <p> Mix and incubate for 30 min on ice. Heat shock at 42 °C for 70 s.</p>
+        <p> After adding 1L LB medium, resuscitate at 37 ° C for 1 h </p>
+        <p> Centrifuge at 10000xg for 2min, discard the supernatant, add 200ml and resuspend
+          The suspension was coated with Amp+ resistant LB plate and cultured at 37 °C.</p>
+        <p></p>
+        <h3>2019.6.5</h3>
+        <p> No positive colonies after E. coli transformation </p>
+        <p></p>
+        <h3>2019.6.8</h3>
+        <p>1. Improved enzyme digestion conditions </p>
+        <p> Re-cut and adjust the digestion time to 15 min.
+          Reset the enzyme system and increase the amount of carrier added to 5μl.
+          37 ° C enzyme ligation for 1 h.</p>
+        <p>2. Improved transformation conditions</p>
+        <p> The enzyme-linked product was directly added to the DH5α competent state without column purification, and the enzyme-linked product was added to 10 μl.
+          Ice incubation time extended to 1h.
+          Add ampicillin to LB liquid medium during resuscitation.</p>
+        <p></p>
+        <h3>2019.6.9</h3>
+        <p>1. 4 plates produce positive</p>
+        <p> Analysis: It can be seen that the previous unsuccessful conversion problem is not in the plasmid, but in the conversion process and conditional issues.</p>
+        <p> Patch positives expanded for 5h.</p>
+        <p>2. Identification of positives by primer L7Ae-Text-Fw and L7Ae-Text-Re colony PCR </p>
+        <p> The test was fully positive and the plasmid was successfully constructed.</p>
+        <p> Inoculate and overnight shaking.</p>
+        <p></p>
+        <h3>2019.6.10</h3>
+        <p>1. Endotoxin-free extract plasmid endo-pcDNA3.1-L7AeMUT and endo-pcDNA3.1-L7Ae</p>
+        <p>2. Mr. He Lei provided E.coli containing the pcDNA-EGFP plasmid. Inoculate it in LB to prepare for extracting plasmids.</p>
+        <p></p>
+        <h3>2019.6.14</h3>
+        <p>1. DNA concentration detection</p>
+        <p>UV spectrophotometer was used to detect endo-pcDNA3.1-L7AeMUT and endo-pcDNA3.1-L7Ae concentrations:</p>
+        <p> endo-pcDNA3.1-L7AeMUT: 264.35 ng/μL; endo-pcDNA3.1-L7Ae: 209.35 ng/μL</p>
+        <p></p>
+        <h3>2019.6.24</h3>
+        <p>1. Plasmid extraction </p>
+        <p> pTK295, pEF1α_reTA3, pTRE_EGFP2, pAdeasy: extract plasmid (endotoxin-free)</p>
+        <p> pShuttle, pAdTrack, pAVV-Ubc, LSBr5and3: extract plasmid (not endotoxin-free)</p>
+        <p></p>
+        <h3>2019.6.29</h3>
+        <p>1. Gel extraction of 1xKt-EGFP and 2xKt-EGFP</p>
+        <p>2. UV spectrophotometer to measure concentration</p>
+        <p>1xKt-EGFP: 43.6 ng/uL ; 2xKt-EGFP: 64.3ng/uL</p>
+        <p>3. Inoculate DH5α-pcDNA3.1 in LB medium. Shake overnight. </p>
+        <p></p>
+        <h3>To be continued……</h3>
+        <h4>To know more about our experiment arrangement and work flow, please refer to these intact experiment records below. </h4>
+        <p><a href="https://2019.igem.org/wiki/images/4/47/T--SYSU-CHINA--AER.pdf">Adenovirus Experiment Record</a></p>
+        <p><a href="https://2019.igem.org/wiki/images/1/15/T--SYSU-CHINA--CER.pdf">Cell Experiment Record</a></p>
+        <p><a href="https://2019.igem.org/wiki/images/9/9a/T--SYSU-CHINA--MER.pdf">Molecular Experiment Record</a></p>
+
+      </div>
+
+
+      <hr class="col-md-13">
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Back to up Button-->
+<div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+	</span>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer" class="page-footer">
+  <!--Footer Links-->
+  <div class="container text-center">
+    <div class="row1" style="width: 100%;">
+      <!--First column-->
+      <div class="col-md-3 col-lg-2" style="width: 400px;">
+        <h6 class="text-uppercase" style="color: #f9d26b; font-size: 32px; ">
+          <strong>Contact</strong>
+        </h6>
+
+        <hr class="col-md-14" style="color: #f9d26b; margin-top: 1px; margin-bottom: 5px;">
+
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 20px">
+            Email: </a>
+        </p>
+
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 20px;">
+            Email: </a>
+        </p>
+
+        <p style="text-align: center;">
+          <a href="#" style="color: #ffffff; font-size: 20px;">
+            Email: </a>
+        </p>
+
+      </div>
+      <!--First column-->
+      <div class="col-md-3" style="width:400px; float: right; margin-top: 3%">
+
+        <div class="row1" style="width: 400px;">
+          <img src="https://2019.igem.org/wiki/images/0/0d/T--SYSU-CHINA--sysulogo2.jpg" style="float:left; width: 65px; height: 65px; box-shadow: none;">
+          <img src="https://2019.igem.org/wiki/images/a/a5/T--SYSU-CHINA--lifesysulogo.png" style="float:left; width: 322px; height: 65px; box-shadow: none; margin-bottom: 3%;">
+        </div>
+
+        <div class="row1" style="width: 400px;">
+          <img src="https://2019.igem.org/wiki/images/c/c7/T--SYSU-CHINA--genesript1.jpg" style="float:left; width: 200px; height: 65px; box-shadow: none;">
+        </div>
+
+      </div>
+      <!--/.Fourth column-->
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+  <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>-->
+  <!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.min.js"><\/script>')</script>-->
+  <!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.js"><\/script>')</script>-->
+
+  <script src="../carousel/js/jquery.min.js"></script>
+  <!-- <script src="../carousel/js/jquery.js"></script> -->
+  <script src="../carousel/js/bootstrap.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="../carousel/js/holder.min.js"></script>
+  </body>
+</html>

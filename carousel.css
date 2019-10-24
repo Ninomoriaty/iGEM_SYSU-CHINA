@@ -5,6 +5,7 @@
   /* Padding below the footer and lighter body text */
 
 body {
+  font-family: sans-serif;
   top: -6px !important;
   margin-top: 0;
   width: 100% !important;
@@ -16,7 +17,7 @@ body {
 
 
 body::-webkit-scrollbar {
-  width: 0.3%;
+  width: 0.5%;
   background:transparent !important;
 }
 
@@ -45,12 +46,52 @@ img {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
 }
 
+p {
+  text-align: justify !important;
+  font-family: sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.5;
+  width: 100%;
+  height: auto;
+  word-wrap:break-word;
+  word-break: keep-all !important;
+  overflow: hidden;
+}
+
+.popover-title {
+  background-color: rgba(255,190,27,0.78) ;
+  color: #333333;
+  font-size: 20px;
+}
+
+.popover-content {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400 !important;
+}
 
 .mw-body{
   padding: 0px !important;
 }
 
-  /* remove some details-------------------------------------------------- */
+.col-md-9 > p {
+  padding-bottom: 1% !important;
+}
+
+.col-md-9 > div > p {
+  padding-bottom: 1% !important;
+}
+
+.container > p {
+  padding-bottom: 1% !important;
+}
+
+.tab-pane > p {
+  padding-bottom: 1% !important;
+}
+
+
+/* remove some details-------------------------------------------------- */
 #home_logo, #sideMenu{
   display:none;
 }
@@ -91,13 +132,14 @@ img {
   }
 }
 
-#mdback {
+#tmback {
   /* The image used */
-  background-image: url("https://2019.igem.org/wiki/images/1/12/T--SYSU-CHINA--logic_gate.png");
+  background-image: url("https://2019.igem.org/wiki/images/3/36/T--SYSU-CHINA--indextm1.jpg");
+  background-color: black;
 
   /* Full height */
-  width: 100%;
-  height: 600px;
+  width: calc(100%);
+  height: calc((100vw) * (1/3));
 
 
   /* Center and scale the image nicely */
@@ -107,12 +149,152 @@ img {
 }
 
 
+#pjback {
+  /* The image used */
+  background-image: url("https://2019.igem.org/wiki/images/8/8d/T--SYSU-CHINA--indexpj2.jpg");
+  background-color: #f0ad4e;
+
+  /* Full height */
+  width: calc(100%);
+  height: calc((100vw) * (1/3));
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+#mdback {
+  /* The image used */
+  background-image: url("https://2019.igem.org/wiki/images/a/af/T--SYSU-CHINA--indexmd3.jpg");
+  background-color: black;
+
+  /* Full height */
+  width: calc(100%);
+  height: calc((100vw) * (1/3));
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+#partsback {
+  /* The image used */
+  background-image: url("https://2019.igem.org/wiki/images/9/9d/T--SYSU-CHINA--indexparts4.jpg");
+  background-color: #f0ad4e;
+
+  /* Full height */
+  width: calc(100%);
+  height: calc((100vw) * (1/3));
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+#sfback {
+  /* The image used */
+  background-image: url("https://2019.igem.org/wiki/images/b/bb/T--SYSU-CHINA--indexsf5.jpg");
+  background-color: black;
+
+  /* Full height */
+  width: calc(100%);
+  height: calc((100vw) * (1/3));
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+#hpback {
+  /* The image used */
+  background-image: url("https://2019.igem.org/wiki/images/d/dc/T--SYSU-CHINA--indexhp6.jpg");
+  background-color: #f0ad4e;
+
+  /* Full height */
+  width: calc(100%);
+  height: calc((100vw) * (1/3));
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+.indexboard {
+  background-color: rgba(90,90,90,0.4);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.indexboard:hover {
+  background-color: rgba(90,90,90,0.8);
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -moz-transition: all 0.3s ease-in-out !important;
+  -ms-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.hugetitle {
+  font-size: 80px;
+  text-shadow: #f0ad4e 0.1em 0.1em 0.2em !important;
+}
+
+
+/* index special
+-------------------------------------------------- */
+.indexbutton {
+  border: none;
+  background-color: rgba(226,226,226,0.3);
+  color: white !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.indexbutton:hover {
+  background-color: #484848;
+  color: rgba(255,255,255,1);
+}
+
+
+.pstyle {
+  padding-bottom: 1% !important;
+}
+
+
+.carousel-indicators {
+  width:200px;
+}
+
+
 /* HP special
 -------------------------------------------------- */
 .hptitle {
   position: relative;
   width: 90%;
-  left: 5%;
+  left: 3%;
   right: 5%;
   margin-top: 10%;
   margin-bottom: 3% !important;
@@ -140,16 +322,16 @@ img {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: sans-serif !important;
   font-size: 18px !important;
   font-weight: 700;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-   cursor: default;
+  cursor: default;
   color: white !important;
-   background-color: #FFB700;
-   border: none;
+  background-color: #FFB700;
+  border: none;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -159,7 +341,7 @@ img {
   -ms-transition: all 0.3s ease-in-out !important;
   -o-transition: all 0.3s ease-in-out !important;
   transition: all 0.3s ease-in-out !important;
- }
+}
 
 .hptab {
   color: #333333 !important;
@@ -201,42 +383,42 @@ img {
   padding: 1%;
 }
 
-.mycontentcolla {
+#mycontentcolla {
   padding: 0 !important;
   text-align: center;
+  padding-top: 0 !important;
   margin-left: 10%;
   width: 80%;
-  background-color: white;
 }
 
 
 .hpstyle {
-margin:0 !important;
-background-color: #555555 !important;
-color:  white !important;
-border: none !important;
-border-left: 5px solid #f0ad4e !important;
-border-right: 5px solid #f0ad4e !important;
-margin-bottom: 0 !important;
-font-size: 14px;
-font-weight: 600;
-width: 100%;
--webkit-transition: all 0.5s ease-in-out;
--moz-transition: all 0.5s ease-in-out;
--ms-transition: all 0.5s ease-in-out;
--o-transition: all 0.5s ease-in-out;
-transition: all 0.5s ease-in-out;
-z-index: 90;
+  margin:0 !important;
+  background-color: #555555 !important;
+  color:  white !important;
+  border: none !important;
+  border-left: 5px solid #f0ad4e !important;
+  border-right: 5px solid #f0ad4e !important;
+  margin-bottom: 0 !important;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 90;
 }
 
 .hpstyle:hover {
-background: #f0ad4e !important;
-color:  #333333 !important;
--webkit-transition: all 0.3s ease-in-out !important;
--moz-transition: all 0.3s ease-in-out !important;
--ms-transition: all 0.3s ease-in-out !important;
--o-transition: all 0.3s ease-in-out !important;
-transition: all 0.3s ease-in-out !important;
+  background: #f0ad4e !important;
+  color:  #333333 !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -moz-transition: all 0.3s ease-in-out !important;
+  -ms-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
 .hpstyle:focus, .hpstyle:active {
@@ -250,11 +432,9 @@ transition: all 0.3s ease-in-out !important;
 
 .col-md-15 {
   background-color: white;
-  margin-top: 10%;
   margin-left: 10%;
   margin-right: 10%;
-  padding-left: 15%;
-  padding-right: 10%;
+
 }
 
 
@@ -561,17 +741,17 @@ list-group {
   background-color: #f0ad4e !important;
   color:  #333333 !important;
   padding-left: 15% !important;
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--ms-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .list-group-item.show {
-visibility:visible;
-cursor:pointer;
-opacity: 1.0;
+  visibility:visible;
+  cursor:pointer;
+  opacity: 1.0;
 }
 
 .mynav {
@@ -594,57 +774,64 @@ opacity: 1.0;
   width: 85%;
   left: 5%;
   right: 5%;
-  margin-top: 10%;
-  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 1% !important;
+}
+
+.tab-ls {
+  padding-left: 80px;
+}
+
+.tab-text {
+  padding-left: 40px;
 }
 
 h1 {
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: sans-serif !important;
   font-weight: 800 !important;
+  margin-bottom: 0 !important;
 }
 
 h2 {
   width: 100% !important;
   height: 100%;
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: sans-serif !important;
   font-weight: 700 !important;
   margin-bottom: 25px;
-  padding-top: 20px;
+  margin-top: 50px;
+  border-left: 6px solid #f0ad4e;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 10px
 }
 
 h3 {
-  font-family: "Arial Black", Gadget, sans-serif;
-  color: #444444;
+  font-family: sans-serif !important;
+  color: #666666;
   font-weight: 600 !important;
-  margin-bottom: 25px;
-  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  border-left: 3px solid #333333;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px
 }
 
 h4 {
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: sans-serif !important;
   font-size: 22px;
   color: #444444;
-  font-weight: 550 !important;
+  font-weight: 500 !important;
   margin-bottom: 25px;
   padding-top: 10px;
 }
 
-p {
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 18px !important;
-  line-height: 1.5;
-  width: 100%;
-  height: auto;
-  word-wrap:break-word;
-  word-break:break-all;
-  overflow: hidden;
-}
 
 .col-md-9 {
   margin-left: 1%;
   background-color: #f8f8f8;
   border-left: 4px solid #444444;
-  padding-top: 5%;
+  padding-top: 3% !important;
   padding-left: 3%;
   padding-right: 3%;
   padding-bottom: 5%;
@@ -668,10 +855,20 @@ p {
 .col-md-14 {
   border-top: 1px solid #C8C8C8 !important;
   padding-right: -10%;
-  margin-top: 30px;
-  margin-bottom: 5%;
+  margin-top: 40px;
+  margin-bottom: 8%;
 }
 
+
+
+.piccontent {
+  font-size: 20px !important;
+  font-weight: 500;
+  text-align: center !important;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
 
 
 
@@ -680,12 +877,21 @@ p {
 -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-header:hover {
+  box-shadow: 1px 1px 5px 2px #f0ad4e !important;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+
 .navbar-brand {
   height: 50px;
-  width: 150px;
+  width: 300px;
   font-size: 18px;
   padding: 0px;
-  font-weight: 700px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -698,6 +904,10 @@ p {
   width: 150px;
   font-size: 18px;
   text-align: center;
+}
+
+.dropdown-toggle:hover {
+  background-color: black;
 }
 
 .navbar-wrapper {
@@ -821,21 +1031,36 @@ p {
 }
 
 .row1{
-  text-align:center !important;
-  margin:0 auto;
-}
-
-.row1 .col-md-3{
   display:inline-block;
   vertical-align: middle;
   float: none;
+  text-align:center !important;
+  width: 95%;
+  margin-bottom: 1%;
 }
+
+.col-md-3{
+  display:inline-block;
+  vertical-align: middle;
+  float: none;
+  height: 200px;
+}
+
+h6{
+  margin-bottom: 0;
+}
+
+.ftbutton:hover {
+  box-shadow: 1px 1px 5px 2px #f0ad4e !important;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  width: calc(100%);
+  height: calc((100vw) * (1/3));
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -845,19 +1070,27 @@ p {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  width: calc(100%);
+  height: calc((100vw) * (1/3));
   background-color: #777;
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  height: 500px;
+  width: calc(100%);
+  height: calc((100vw) * (1/3));
+}
+
+.carousel-inner {
+  width: calc(100%);
+  height: calc((100vw) * (1/3));
 }
 
 .carousel-control {
   color: whitesmoke !important;
+  height: calc((100vw) * (1/3));
 }
 
 
@@ -877,6 +1110,10 @@ p {
   margin-left: 10px;
 }
 
+.text-muted {
+  font-size:30px;
+}
+
 
 /* Featurettes
 ------------------------- */
@@ -887,6 +1124,7 @@ p {
 
 /* Thin out the marketing headings */
 .featurette-heading {
+  margin-top: 0px !important;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
@@ -900,7 +1138,7 @@ p {
   visibility: hidden;
   overflow: hidden;
   text-align: center;
-  z-index: 100;
+  z-index: 120;
   background-color: #444444;
   color: #eeeeee;
   width: 70px;
@@ -943,12 +1181,12 @@ p {
   overflow: hidden;
   text-align: center;
   z-index: 100;
-  background-color: rgba(206, 206, 206, 0.5);
+  background-color: rgba(68, 68, 68, 0.5);
   color: #eeeeee;
   width: 70px;
   height: 70px;
   line-height: 48px;
-  top: 65%;
+  top: 80%;
   right: 48%;
   bottom: 150px;
   padding-top: 2px;
@@ -964,7 +1202,7 @@ p {
 }
 
 .scroll-down-wrapper:hover {
-  background-color: rgba(68, 68, 68, 0.5);
+  background-color: rgba(206, 206, 206, 0.5);
 }
 
 .scroll-down-wrapper.hide {
@@ -982,7 +1220,7 @@ p {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-top: 0px;

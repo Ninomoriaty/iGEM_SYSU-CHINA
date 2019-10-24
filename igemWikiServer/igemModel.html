@@ -1,0 +1,435 @@
+{{SYSU-CHINA/bootstrap.css}}
+{{SYSU-CHINA/carousel.css}}
+{{SYSU-CHINA/navbartop}}
+{{SYSU-CHINA/backtotopbutton}}
+<html>
+<body>
+<script type="text/javascript" src="https://2019.igem.org/wiki/index.php?title=Template:SYSU-CHINA/jquery.js&action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="https://2019.igem.org/wiki/index.php?title=Template:SYSU-CHINA/bootstrap.js&action=raw&ctype=text/javascript"></script>
+
+
+
+
+
+
+<!-- Carousel
+    ================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+
+
+  <div class="carousel-inner" role="listbox">
+
+    <div id="mdback" class="item active">
+      <div class="container">
+
+        <div class="bg"></div>
+
+        <div class="carousel-caption" style="
+        margin-bottom: 10%;">
+          <h1 class="hugetitle">Model</h1>
+        </div>
+
+        <!-- up to next Button-->
+        <div class="scroll-down-wrapper">
+          <span class="glyphicon glyphicon-chevron-down""></span>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div><!-- /.carousel -->
+</div>
+
+<!-- Begin Body -->
+<div class="mycontainer" id="mycontentcon" style="margin-top: 5%;">
+
+  <p id="tam" class="hptitle" style="left:10% !important;">Target Analysis Model</p>
+
+  <div class="row">
+
+    <!--SideBar-->
+    <div class="col-md-2">
+      <ul class="nav mynav md" data-spy="affix" data-offset-top="-100px" style="top:10%;">
+        <ul id="main-nav" class="nav nav-tabs nav-stacked" style=" border-radius: 0; background-color: #f0ad4e">
+          <li class="active">
+            <a href="#" style="text-align: center; font-size: 22px; background-color: #f0ad4e"">
+            Model
+            </a>
+          </li>
+
+          <li>
+            <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse" style="font-size: 14px;">
+              Target Analysis Model
+              <span style="font-size: 14px;" class="pull-right glyphicon glyphicon-chevron-down"></span>
+            </a>
+            <ul id="systemSetting" class="nav nav-list collapse secondmenu hua0" style="height: 0px; margin: 0px; border: none !important;">
+              <li><a class="mdstyle" href="#c1" contenteditable="false">Methods</a></li>
+              <li><a class="mdstyle" href="#c2" contenteditable="false">Results</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#systemSetting1" class="nav-header collapsed" data-toggle="collapse">
+              Intracellular Model
+              <span style="font-size: 14px;" class="pull-right glyphicon glyphicon-chevron-down"></span>
+            </a>
+            <ul id="systemSetting1" class="nav nav-list collapse secondmenu hua1" style="height: 0px; margin: 0px; border: none !important;">
+              <li><a class="mdstyle" href="#c11" contenteditable="false">Abstract</a></li>
+              <li><a class="mdstyle" href="#c12" contenteditable="false">Assumption</a></li>
+              <li><a class="mdstyle" href="#c13" contenteditable="false">Model Description</a></li>
+              <li><a class="mdstyle" href="#c14" contenteditable="false">Model Results</a></li>
+              <li><a class="mdstyle" href="#c15" contenteditable="false">Parameters Configuration and Relevant Data</a></li>
+              <li><a class="mdstyle" href="#c16" contenteditable="false">Conclusion and Future Improvements</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#systemSetting2" class="nav-header collapsed" data-toggle="collapse">
+              Intercellular Model
+              <span style="font-size: 14px;" class="pull-right glyphicon glyphicon-chevron-down"></span>
+            </a>
+            <ul id="systemSetting2" class="nav nav-list collapse secondmenu hua2" style="height: 0px; margin: 0px; border: none !important;">
+              <li><a class="mdstyle" href="#c21" contenteditable="false">Assumption</a></li>
+              <li><a class="mdstyle" href="#c22" contenteditable="false">Model Description</a></li>
+              <li><a class="mdstyle" href="#c23" contenteditable="false">Model Results</a></li>
+              <li><a class="mdstyle" href="#c24" contenteditable="false">Relevant Data</a></li>
+              <li><a class="mdstyle" href="#c25" contenteditable="false">Conclusion and Discussion</a></li>
+              <li><a class="mdstyle" href="#c26" contenteditable="false">Supplementary Materials</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </ul>
+    </div>
+
+
+
+
+    <div class="col-md-9" id="mycontent">
+      <h1 id="" class="">Mathematical Model Development for miRNA Screening</h1>
+      <hr class="col-md-12">
+
+      <p class="pstyle"> We always hope that the biological machine we developed is universally applicable. Not only can it be treated for a specific cancer, but it can also target any cancer cell that meets established criteria. We have developed a new R package, hoping to screen out miRNAs with very large differences in absolute and relative expression between cancer cells and adjacent cells. And we designed miRNA sensors based on them to regulate the "recognition" function of the entire system. The higher the level of miRNA differences we screen, the lower the risk of off-target effects in biological machines. Here, we take colon cancer as an example, perform statistical screening and compare it with the results of manual database search and find that two results are consistent. </p>
+
+      <hr id="c1" class="col-md-14">
+
+      <h2>Method</h2>
+
+      <h3> Data collection</h3>
+      <p class="pstyle">The microRNA readscount data was downloaded from TCGA (https://tcga-data.nci.nih.gov/tcga/) using the TCGA-biolinks R package. The development of TCGA-biolinks data package provides a comprehensive analysis platform for data query, data download and data execution of TCGA database users. Loading the R package should pay attention to the environment variables.  And the application of this data packet involves more packages, so we chose R instead of Rstudio. The results showed that a total of 463 samples of microRNA readscount data were downloaded for cancer and paracancerous sample data, in line with our design requirements.</p>
+
+      <h3> Variance calculation</h3>
+      <p class="pstyle"> Difference calculations were performed on the microRNA readscount data using the Deseq2 R package. Differential expression microRNAs were screened by setting foldchange greater than 2 and p-value less than 0.05. The Deseq model is established, the expression matrix and the group file are input, and the output folder is created according to the comparison between the groups. Then high and low expression result files are respectively output after the NA value and the number format are deleted. Here foldchange represents the fold multiple, for miRNAs whose differential expression is up-regulated or down-regulated by more than 2 fold will be screened. Here we convert the foldchange to a value with Log, for the output is Log2Foldchange. P-value is a statistical parameter, and its statistical significance is that when the p value is less than 0.05, the confidence of the hypothesis test will be greater than 95%, and the difference can be considered significant. This study will have some follow-up studies, so the expression data will be normalized for subsequent analysis. </p>
+
+
+      <h3>Volcano Map</h3>
+
+      <p class="pstyle"> Load ggplot2, RcolorBrewer package to map miRNA differential expression volcano map. It should be clarified here that in the process of differential expression analysis, the p value of the original hypothesis test is corrected by statistical method, and finally the corrected p value is used, which is called FDR (False Discovery Rate). In this study, FDR = -lg(pvalue); FC(Fold Change) is the ratio of gene expression levels between two samples (groups) and is a variable indicating the fold difference. In the differential expression analysis, these two parameters are simultaneously controlled to screen for significant differentially expressed genes, such as FDR<0.05 and FC>=2. The essence of the volcano map is a scatter plot, which visually shows the relationship between FDR and Fold Change for all genes, in order to quickly see the extent of the difference in expression levels between the two groups of samples and their statistical significance.</p>
+
+      <hr id="c2" class="col-md-14">
+
+      <h2>Results</h2>
+      <h3> miRNA differential expression screening results</h3>
+      <p class="pstyle"> The sample was COAD colon cancer and paracancerous data. A total of 477 differential microRNAs were screened from 1881 microRNAs, of which 159 were up-regulated and 318 were down-regulated. The top 10 miRNAs with up-regulated and down-regulated Log2Foldchange were considered to be extremely significantly high and low in colon cancer patient cells. According to the high and low expression screening results, the absolute expression level of each miRNA in the miRNA database of cancer and adjacent tissues can be obtained, and a suitable match can be found. In this study, we used miR-592 for high expression of miRNA binding sites and miR-885 for low expression of miRNA binding sites. According to the results of the database query, the high and low miRNAs and differential expression appeared in the sperm. In order to maximize the benefit of the therapeutic model, we introduced miR-663b, which is not expressed in colon cells, as a new regulation of the three miRNAs. Avoid the risk of non-specific recognition of sperm by the colon cancer treatment model. </p>
+      <p class="pstyle">&nbsp;</p>
+      <img src="https://2019.igem.org/wiki/images/f/ff/T--SYSU-CHINA--MHI.png" style="width:80%; position: relative; margin-left: 10%; margin-right: 10%;">
+      <p style="width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;"><strong>Figure 1.</strong>Top 10 high-expressed miRNA by screening  </p>
+      <p class="pstyle">&nbsp;</p>
+      <img src="https://2019.igem.org/wiki/images/5/5f/T--SYSU-CHINA--MLO.png" style="width:80%; position: relative; margin-left: 10%; margin-right: 10%;">
+      <p style="width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;"><strong>Figure 2.</strong>Top 10 low-expressed miRNA by screening  </p>
+      <p class="pstyle">&nbsp;</p>
+      <h3>Volcano Map</h3>
+      <p class="pstyle"> Using ggplot2, you can draw common volcano maps and visually express differential expression profiles of miRNAs. The abscissa indicates the logarithm of the difference in the expression level of a certain miRNA in cancer and adjacent tissues, namely log2 (FC); the larger the absolute value of the abscissa, the greater the difference in the expression level between the two samples. The ordinate represents the negative logarithm of p-value, which is -lg(pvalue). The larger the ordinate value, the more significant the differential expression, and the more reliable the differentially expressed genes were. Up-regulated expression of miRNA is marked in red, miRNA down-regulated expression is marked in blue, and black part is formal data, ie, data that does not meet the screening conditions.</p>
+      <p class="pstyle">&nbsp;</p>
+      <img src="https://2019.igem.org/wiki/images/c/c0/T--SYSU-CHINA--MVOC.png" style="width:40%; position: relative; margin-left: 30%; margin-right: 30%;">
+      <p style="width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;"><strong>Figure 3.</strong> Volcano Map  </p>
+      <p class="pstyle">&nbsp;</p>
+      <h3> Normalized Data And Development of New Scripts </h3>
+      <p class="pstyle"> In the study, we obtained normalized data. To ensure the integrity of the experiment, we fit and script, using the sample mean of each miRNA in the normalized data to represent the absolute expression of the miRNA. Use this as an ascending and descending screening. This ranking represents an ordering of the absolute amount of miRNA expression in cancer tissues. Absolute expression can seriously affect the accuracy of the model, so we believe that the average order of normalized data is representative. The first 10 miRNAs after sorting are compared with the last 10 miRNAs, and the intersection is required to obtain the intersection of absolute high expression and relatively high expression, and the intersection of absolute low expression and relatively low expression, so that the output result will be more Persuasion can greatly avoid the non-specific recognition and other errors that the model may cause.</p>
+
+
+      <hr id="im1"  class="col-md-13">
+    </div>
+
+    <p  id="c11" class="hptitle" style="margin-top: 5%; left:10% !important;">Intracellular Model</p>
+
+
+    <div class="row">
+      <!--SideBar-->
+      <div class="col-md-2">
+
+      </div>
+
+      <div class="col-md-9" id="mycontent">
+        <hrclass="col-md-12">
+
+        <div>
+          <h2 class="">Abstract</h2>
+          <p class="pstyle">A stochastic, exploratory model which simulated the molecular dynamic in each cell was adapted from the model used by L. Wroblewska et al<sup>[1]</sup> to investigate whether our project design would be feasible. </p>
+          <p class="pstyle">In our design of the biological experiment, EGFP was used to validate our project design, which was considered as a representative of a viral early gene expression product during the infection. Therefore, this idea was also applied in the model; L7Ae was the inhibitor of EGFP expression by “binding” to the mRNAs of the EGFP and “inhibit” their “translation”, and was also simulated in our model.</p>
+        </div>
+        <hr id="c12" class="col-md-14">
+
+        <div>
+          <h2 class="">Part I: Assumption</h2>
+          <p class="pstyle">The different micro-RNA (miRNA, miR) profiles in control cells (which “expressed” neither miR-H nor miR-L), cancer cells (which only “expressed” miR-H) and normal cells (which only “expressed” miR-L) could distinguish the “expression” of EGFP.</p>
+        </div>
+        <hr id="c13" class="col-md-14">
+
+        <div>
+          <h2>Part II: Model Description</h2>
+          <p class="pstyle">A detailed demonstration of the model is as shown in Fig. 1. </p>
+          <p class="pstyle">&nbsp;</p>
+          <img src="https://2019.igem.org/wiki/images/2/2c/T--SYSU-CHINA--MDes.png" style="width:80%; position: relative; margin-left: 10%; margin-right: 10%;">
+          <p class="pstyle">&nbsp;</p>
+          <p style="width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;"><strong>Figure 1</strong> detailed description scheme of the model.</p>
+          <p class="pstyle">&nbsp;</p>
+          <p class="pstyle">In general, the model simulates the molecular dynamic in each cell by circularly calculating the probability of the events, including transcription, translation, substrates binding/unbinding, degradation and the inhibition of translation (caused by binding of L7Ae), and then executing one of the events according to the probability. The probability of an event is calculated by multiplying the amount of the reactant(s) involved and the factor(s) of the event (for example, the translation rate for the translation event), and then this value is divided by the sum of the product values of all events calculated as has been noted, and finally gets the probability of the event. All simulations were run in batches of 60 cells and the duration of 24 hours (1440 minutes).</p>
+          <p class="pstyle">1. A constant amount (as in the same batch of simulations, the same below), N0, of plasmid(s) is assumed in a single cell.</p>
+          <p class="pstyle">2. At some point, the cell “divides” and marks the start of the simulation. nC, nL are the numbers of the plasmid DNA (pDNA) of EGFP and L7Ae that can be “expressed” in the cell, respectively. To better simulate the transfection behavior, both nC and nL follow a Poisson distribution, which has a mean of N0 and a variance described by SDfactor (i.e. variance-to-mean rate, VMR).</p>
+          <p class="pstyle">3. Transcription: The gene of EGFP and L7Ae can be “transcribed” to message RNAs (mRNAs) of EGFP and L7Ae (mC and mL, respectively).</p>
+          <p class="pstyle">4. Translation: The mRNAs of EFGP and L7Ae can be “translated” to EGFP and L7Ae proteins (C and L, respectively).</p>
+          <p class="pstyle">5. Degradation of mRNAs and proteins: the degradation of mRNAs and proteins in the normal situation.</p>
+          <p class="pstyle">6. Substrates binding/unbinding: the binding/unbinding behavior of substrates, which include miR-H “bind to/unbind from” mRNA of L7Ae (mL7Ae), miR-L “bind to/unbind from” mEGFP, L7Ae “(doubly) bind to/unbind from” mEGFP.</p>
+          <p class="pstyle">7. The translation inhibition of mEGFP caused by L7Ae “(doubly) bind/unbind” to mEGFP: it is considered that when L7Ae doubly bind to mEGFP, the translation is inhibited as twice as much as when L7Ae singly binds to mEGFP.</p>
+          <p class="pstyle">8. The degradation of mRNAs caused by miR: After the miR “binds” to the target mRNA, the RISC complex can “degrade” the mRNA[2]. To simplify the simulation, it is considered that the total amount of miRs in a cell is constant; also, it is considered that the miRs will not be “degraded” during the event (the miRs are released/unbound from the “degraded” mRNAs).</p>
+        </div>
+
+        <hr id="c14" class="col-md-14">
+        <div>
+          <h2>Part III: Model Results</h2>
+          <h3 class="">The different miRNA profiles in control cells, cancer cells and normal cells could distinguish the “expression” of EGFP</h3>
+          <p class="pstyle">Some of our results show that the different miRNA profiles in control cells, cancer cells and normal cells can distinguish the “expression” of EGFP (N0=3, Fig. 2A), while others do not completely support this assumption (N0=1 or 5, Fig. 2A). </p>
+          <p class="pstyle">Further investigation was done by analyzing the amount of mEGFP (Fig. 2B), the “expression” of L7Ae (Fig. 2C), and the amount of mL7Ae (Fig. 2D). There is no significant difference of vL7Ae (variable forms of L7Ae proteins) or mL7Ae between normal cells and control cells, and there is a very significant difference of vL7Ae and mL7Ae between cancer cells and control cells (Fig. 2C-D). These results show that both the L7Ae inhibition system and the miR-H inhibition system work well.</p>
+          <p class="pstyle">There is no significant difference of mEGFP between control cells and normal cells (Fig. 2B), which suggests that the miR-L system does not work so well, probably because the total copy number of miR-L is too low. </p>
+          <p class="pstyle">Also, significant difference of mEGFP is observed between control cells and cancer cells, which is not expected, and it is even odd that the mEGFP in cancer cells is lower than in control cells (Fig. 2B). After excluding possible bugs, repeating the simulations with the exact same parameters and still getting the same result, we infer that a technical problem may occur during the simulation, which is that because the number of simulation repeats was limited, and only one event was executed in every simulation repeat, the operation of miR-H system may occupy the simulation repeat which may be used by mEGFP “synthesis”, and the copy number of mEGFP was unexpectedly affected.</p>
+          <p class="pstyle">In conclusion, these results show that the L7Ae inhibition system and the miR-H inhibition system work well while the miR-L inhibition system does not.</p>
+          <img src="https://2019.igem.org/wiki/images/8/82/T--SYSU-CHINA--model.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;" alt="Cinque Terre">
+          <p style="width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;"><strong>Figure 2</strong>  Copy numbers of vEGFP (A), mEGFP (B), vL7Ae (C) and mL7Ae (D). The P-values are generated by Welch Two Sample t-test. Significance Symbols: *, P-value<0.05; **, P-value<0.01; ***, P-value<0.001; n.s., not significant, P-value≥0.05.</p>
+
+        </div>
+
+        <hr id="c15" class="col-md-14">
+        <div>
+          <h2 id="c15">Part IV: Parameters Configuration and Relevant Data</h2>
+          <table class="table table-striped table-responsive" style="width:80%; margin-left: 10%; margin-left: 10%; ">
+            <caption><p style="color:#000; width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;"><strong>Table 1</strong> Parameters configuration of the model</p></caption>
+            <thead>
+            <tr>
+              <th>Object</th>
+              <th>Description</th>
+              <th>Value</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+              <td>N0</td>
+              <td>starting copy number of plasmid(s)</td>
+              <td>various: 1,3,5</td>
+            </tr>
+            <tr>
+              <td>SDfactor</td>
+              <td>the variance-to-mean rate of the Poisson distribution followed by nC and nL</td>
+              <td>0.3</td>
+            </tr>
+            <tr>
+              <td>kTS</td>
+              <td>transcription rate (1/min)</td>
+              <td>1<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>kTL</td>
+              <td>translation rate (1/min)</td>
+              <td>1<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>degR</td>
+              <td>mRNA degradation rate (1/min)</td>
+              <td>0.002<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>degP</td>
+              <td>protein degradation rate (1/min)</td>
+              <td>5e-4<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>sigma</td>
+              <td>L7Ae translation inhibition factor</td>
+              <td>3e-3<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>sigma2</td>
+              <td>L7Ae translation inhibition factor (doubly bound)</td>
+              <td>1.5e-3<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>kON_L</td>
+              <td>L7Ae binding rate (1/molec/min)</td>
+              <td>0.00024<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>kOFF_L</td>
+              <td>L7Ae unbinding rate (1/molec/min)</td>
+              <td>0.01<sup>[1]</sup></td>
+            </tr>
+            <tr>
+              <td>kcat_miR</td>
+              <td>mRNA degradation rate in RISC complex (1/min)</td>
+              <td>4.26e-1<sup>[2]</sup></td>
+            </tr>
+            <tr>
+              <td>kON_miR</td>
+              <td>miR binding rate (1/molec/min)</td>
+              <td>1e-1<sup>[2]*</sup></td>
+            </tr>
+            <tr>
+              <td>kOFF_miR</td>
+              <td>miR unbinding rate (1/molec/min)</td>
+              <td>4.14e-1<sup>[2]*</sup></td>
+            </tr>
+            <tr>
+              <td>miR-H</td>
+              <td>miR-H copy number in a cancer cell</td>
+              <td>55<sup>[3,4,5] #</sup></td>
+            </tr>
+            <tr>
+              <td>miR-L</td>
+              <td>miR-L copy number in a normal cell</td>
+              <td>10<sup>[3,4,5] #</sup></td>
+            </tr>
+            </tbody>
+
+          </table>
+          <p style="width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;">* kON_miR and kOFF_miR were calculated according to the formula Km=(kcat_miR+kOFF_miR)/kON_miR. Km=8.4(nM)<sup>[2]</sup>.</p>
+          <p style="width:80%; position: relative; margin-left: 10%; margin-left: 10%; font-size: 16px !important;"># These are estimated copy numbers of miR-H and miR-L according to the ACN (absolute copy number in a cell) - RPM (reads per million) relationship. It is estimated that in the MCF-7 cell line, the value of miR ACN is about 2-4 folds of RPM<sup>[3,4]</sup>. In our project design, we used hsa-miR-592 as miR-H and hsa-miR-885-5p as miR-L. The RPM of hsa-miR-592 and hsa-miR-885-5p in colon cancer (COAD) are 20.74 and 3.71, respectively, according to the starbase2 database<sup>[5]</sup>. Therefore, the estimated copy numbers of miR-H and miR-L are 55 and 10 in a cell, respectively.</p>
+
+        </div>
+
+        <hr id="c16" class="col-md-14">
+        <div>
+          <h2>Part V: Conclusion and Future Improvements</h2>
+          <p class="pstyle">Our modeling suggests that our project design is feasible that the different micro-RNA profiles in cancer cells and normal cells can distinguish the expression of EGFP. The L7Ae inhibition system and the miR-H inhibition system work well. Future improvements include increasing the copy number of miR-L by selecting other species of miR which may improve the performance of the miR-L inhibition system.</p>
+
+
+          <h3 class="">References</h3>
+          <p class="pstyle">[1] L. Wroblewska, T. Kitada, K. Endo, et al. Mammalian synthetic circuits with RNA binding proteins for RNA-only delivery (2015). Nature Biotechnology 33(8), 839-841.</p>
+          <p class="pstyle">[2] B. Haley and P. D Zamore. Kinetic analysis of the RNAi enzyme complex (2004). Nature Structural and Molecular Biology 11(7), 599-606.</p>
+          <p class="pstyle">[3] Y. Song, D. Kilburn, J. H. Song, et al. Determination of absolute expression profiles using multiplexed miRNA analysis (2017). PLoS One 12(7), e0180988.</p>
+          <p class="pstyle">[4] B. Panwar, G. S. Omenn, Y. Guan. miRmine: A Database of Human miRNA Expression Profiles (2017). Bioinformatics 33(10), 1554-1560.</p>
+          <p class="pstyle">[5] JH. Li, S. Liu, H. Zhou, et al. starBase v2.0: decoding miRNA-ceRNA, miRNA-ncRNA and protein-RNA interaction networks from large-scale CLIP-Seq data (2014). Nucleic Acids Research 42(Database issue): D92-7.</p>
+
+          <hr id="im2" class="col-md-13">
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <p class="hptitle" style="margin-top: 0%; left:10% !important;">Intercellular Model</p>
+
+    <div class="row">
+      <!--SideBar-->
+      <div class="col-md-2">
+
+      </div>
+
+      <div class="col-md-9" id="mycontent2">
+
+        <hr class="col-md-12">
+        <p class="pstyle">A simple cellular automata (CA) model was developed to simulate the effect of oncolytic virus therapy against tumors. Different situations, including different tumor sizes as well as tumor numbers, different administration (virus) doses and different re-administration gap methods were simulated and discussed. Though this is a rough demonstration, it provides lots of meaningful information for the further improvement for our project design.</p>
+
+        <hr id="c21" class="col-md-14">
+        <div>
+          <h2>Part I: Assumption</h2>
+          <p class="pstyle">Though this modeling was exploratory, it was hoped that in certain conditions the oncolytic virus could eliminate the tumor or at least suppress the tumor growth.</p>
+        </div>
+        <hr id="c22" class="col-md-14">
+        <div>
+          <h2>Part II: Model Description</h2>
+          <h3>(I) Mechanism</h3>
+          <p class="tab-text">1. The CA model used has a 400*400 tetragonal grid with Moore Neighbors (i.e. one cell has 8 neighbor cells). All simulations are run in a duration of 720 hours (30 days). </p>
+          <p class="tab-text">2. For each cell, the <b>cell status</b> can be one of dead, normal or cancer.</p>
+          <p class="tab-ls">For dead cells, they can be regarded as an empty space, and also they are not functional. In the simulation, one cell can become dead when it is infected and run out all its lifespan as an infected cell. The empty space may be filled up by division of its neighbor cells.</p>
+          <p class="tab-ls">For normal cells, they can infect, be infected and divide in certain rate.</p>
+          <p class="tab-ls">For cancer cells, they can also infect, be infected and divide, but in a higher rate than normal cells. Notably, they also possess an ability to invade normal cell “tissues” with a specific probability (set as <b>invade_pro</b>).</p>
+          <p class="tab-text">3. For each cell, the <b>infected status</b> can be either not infected or infected.</p>
+          <p class="pstyle">Infected cells can infect their neighbor cells after a certain period (set as <b>infect_delay</b>).</p>
+          <p class="pstyle"><b>Infect_rate</b> is another parameter that controls the infection process by regulating the probability of infecting neighbor cells.</p>
+          <p class="pstyle">The cancer cells have a shorter infect delay and a higher infect rate than the normal cells.</p>
+          <p class="tab-text">4. For not infected cells, they can divide in a certain time cycle (set as <b>division_time</b>). </p>
+          <p class="tab-text">5. <b>Infect_frac</b> is the parameter that regulates the administration dose. When dosing, the ratio of newly infected cells (due to dosing) and total cells is approximately equal to <b>infect_frac</b>.</p>
+          <p class="tab-text">6. <b>Readmin_gap</b> sets the gap between two administrations. 0 means no re-administration.</p>
+
+          <h3 class="">(II) Simulation Settings</h3>
+          <p class="tab-text">1. Different tumor situations were considered, including different tumor sizes and tumor numbers. For smaller tumors, their numbers were higher, vice versa; but we set all tumor situations to a similar number of cancer cells (around 1000~3200).</p>
+          <p class="tab-text">Three sizes of tumors were considered: small, medium and big.</p>
+          <p class="tab-text">2. Different administration doses were considered: either low dose (infect_frac=0.01) or high dose (infect_frac=0.05). Both of them could be converted into viral TCID50 titer as 1*10<sup>-3.12</sup> and 1*10<sup>-4.83</sup>, respectively, according to <sup>[1]</sup>.</p>
+          <p class="tab-text">3. Different re-administration gaps were considered for small and medium size of tumors: 24 hours (1 day), 72 hours (3 days) and 168 hours (7 days).</p>
+          <hr id="c23" class="col-md-14">
+          <div>
+            <h2>Part III: Model Results</h2>
+            <h3>(1) Single-administration method performs well against big tumors but performs poorly against smaller tumors</h3>
+            <p class="pstyle">The results show that for single-administration method, it can eliminate most of cancer cells and strongly suppress big tumors (Movie S1). For medium size tumors, its effect is moderate but still acceptable. However, for small size tumors, it performs poorly even with high administration dose, and fails to suppress the tumors growth (Fig. 1A). It is suggested that the failure of suppression is caused by the failure of infecting specific tumors and they are left to grow freely (Fig. 2A, Fig. 2B, Movie S2, Movie S3). Smaller the tumor size is, the probability of tumors “escape” infection is higher, and even high single-administration dose can not resolve this problem. Therefore, re-administration methods are considered and simulated later. </p>
+            <p class="pstyle">The death ratio of any single-administration methods is under 6% (Fig. 1B), and therefore can be considered acceptable for not causing widespread tissue necrosis or further organ failure. However, attention should still be paid when using high dose in actual practice.</p>
+            <p class="pstyle"></p>
+            <img src="https://2019.igem.org/wiki/images/e/e2/T--SYSU-CHINA--CAF1.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+            <p class="pstyle"><b>Figure 1</b> cancer cell/normal cell ratio (<b>A</b>) and dead cell/normal cell ratio (<b>B</b>) of single-administration method. Solid line: high dose; dashed line: low dose. Red line: big tumors; green line: medium tumors; blue line: small tumors.</p>
+
+            <p class="pstyle"></p>
+            <img src="https://2019.igem.org/wiki/images/2/27/T--SYSU-CHINA--CAF2.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+            <p class="pstyle"><b>Figure 2</b> simulation demonstration for single-administration method against small size tumors with low dose (<b>A</b>) or high dose (<b>B</b>) at the observation time point of 48 hours (2 days), 240 hours (10 days) and 720 hours (30 days).</p>
+            <p class="pstyle"></p>
+
+            <h3>(2) Re-administration methods are effective against smaller tumors</h3>
+            <p class="pstyle">Since the result above shows that cancer has an escape effect on viral infections, we try to improve treatment by changing the way we give it. The results show that re-administration methods with low dose are quite effective against smaller tumors (Fig. 3A, Fig. 3B) that no matter what the re-administration gap is, they can eliminate most of the cancer cells and suppress the cancer cells in a remarkable low level, under 3%. Notably, even a large re-administration gap (7 days) with low dose can effectively suppress the tumor growth and have similar effect with smaller gap methods (Fig. 4A, Fig. 4B, Movie S4, Movie S5).</p>
+            <p class="pstyle">Due to epithelial cells regeneration, the death ratio of any re-administration methods is under or near 5%, which means that this therapy won't cause widespread tissue necrosis so to cause organ failure. Based on this simulation, we believe that lysotic virus therapy is safe for solid tumors treatment. (Fig. 3C, Fig. 3D).</p>
+            <p class="pstyle"></p>
+            <img src="https://2019.igem.org/wiki/images/9/9e/T--SYSU-CHINA--CAF3.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+            <p class="pstyle"><b>Figure 3</b> cancer cell/normal cell ratio of re-administration method against small tumors (<b>A</b>) and medium tumors (<b>B</b>); dead cell/normal cell ratio of re-administration method against small tumors (<b>C</b>) and medium tumors (<b>D</b>). Color of lines represents different re-administration gap: red, 0 (no re-administration); green, per 24 hours (1 day); blue, per 72 hours (3 days); purple, per 168 hours (7 days). Notably, the scale of y-axis of each graph is different.</p>
+            <p class="pstyle"></p>
+            <img src="https://2019.igem.org/wiki/images/d/d6/T--SYSU-CHINA--CAF4.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
+            <p class="pstyle"><b>Figure 4</b> simulation demonstration for re-administration method against small size tumors with re-administration gap of 24 hours (<b>A</b>) or 168 hours (<b>B</b>) at the observation time point of 48 hours (2 days), 240 hours (10 days) and 720 hours (30 days).</p>
+            <p class="pstyle"></p>
+
+          </div>
+          <hr id="c24" class="col-md-14">
+          <div>
+            <h2>Part IV: Relevant Data</h2>
+            <p class="pstyle">The CA model we used had adapted some simulation parameters from a former work of C. Beauchemin, et al<sup>[2]</sup>, including cell infection patterns and division patterns. TCID50 data in adv. is calculated in our experiment.</p>
+          </div>
+          <hr id="c25" class="col-md-14">
+          <div>
+            <h2>Part V: Conclusion and Discussion</h2>
+            <p class="pstyle">The model results demonstrate that the oncolytic virus therapy can be effective in different tumor situations. The single-administration method is enough effective for big size tumors, but for smaller size tumors, it is recommended to use re-administration method with certain re-administration gap. Putting possible cost and risk into consideration, low-dose administration is enough for suppress tumor growth of all size of tumors, however, the optimal re-administration gap should be further investigated and be used to improve the effect of therapy. </p>
+          </div>
+          <div>
+            <h3>References</h3>
+            <p>[1] Internet Link: http://www.dxy.cn/bbs/topic/14324310</p>
+            <p>[2] C. Beauchemin, J. Samuel and J. Tuszynski. A simple cellular automaton model for influenza A viral infections (2005). Journal of Theoretical Biology 232, 223-234.</p>
+
+            <h3 id="c26">Supplementary Materials</h3>
+            <p class="pstyle"><a href="https://2019.igem.org/wiki/images/f/f9/T--SYSU-CHINA--CAMovieS1.gif">Movie S1 Single-administration method against big size tumors with low dose</a></p>
+            <p class="pstyle"><a href="https://2019.igem.org/wiki/images/1/1c/T--SYSU-CHINA--CAMovieS2.gif">Movie S2 Single-administration method against small size tumors with low dose</a></p>
+            <p class="pstyle"><a href="https://2019.igem.org/wiki/images/8/87/T--SYSU-CHINA--CAMovieS3.gif">Movie S3 Single-administration method against small size tumors with high dose</a></p>
+            <p class="pstyle"><a href="https://2019.igem.org/wiki/images/c/c0/T--SYSU-CHINA--CAMovieS4.gif">Movie S4 Re-administration method with gap of 24 hours against small size tumors with low dose</a></p>
+            <p class="pstyle"><a href="https://2019.igem.org/wiki/images/e/e9/T--SYSU-CHINA--CAMovieS5.gif">Movie S5 Re-administration method with gap of 168 hours against small size tumors with low dose</a></p>
+          </div>
+
+
+
+          <hr class="col-md-13">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+</body>
+</html>
+{{Template:SYSU-CHINA/footer}}

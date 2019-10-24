@@ -159,22 +159,19 @@
 </div>
 
 
-
-<!-- Carousel
-================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel" >
 
 
   <div class="carousel-inner" role="listbox">
 
-    <div id="mdback" class="item active">
+    <div id="tmback" class="item active img-responsive">
       <div class="container">
 
         <div class="bg"></div>
 
         <div class="carousel-caption" style="
         margin-bottom: 10%;">
-          <h1 style="font-size: 64px;">Example headline</h1>
+          <h1 class="hugetitle">Team Members</h1>
         </div>
 
         <!-- up to next Button-->
@@ -193,7 +190,7 @@
 
 
 <!-- Begin Body -->
-<div class="mycontainer id="mycontentcon">
+<div class="mycontainer" id="mycontentcon">
   <div class="row">
 
     <div class="col-md-9" id="mycontent"
@@ -201,108 +198,36 @@
          text-align: center;
          margin-left: 15%;
          width: 80%;
-         background-color: #9d9d9d;
+         background-color: white;
          border-left: 0px;">
-      <h1 id="t" class="">Description</h1>
+      <h1 id="t" class="">Team Members</h1>
       <hr class="col-md-12">
 
-      <img src="13.png" style="width:20%; position: relative; margin-left: 0%;">
-
-      <p>This year we proposed a new cancer treatment system, Adenovirus system with miRNA Targeting(AdmiT). Why did we choose cancer therapy? What is AdmiT system? Why did we build such a system? What helped us in it? What changes have the project gone through?</p>
-      <p>Below we will detail how this project was born, how it is improved, and its biological significance.</p>
-
-
-      <div>
-        <h2 id="c1" class="">Determine our direction and research field (Find our direction)</h2>
-
-        <h3 class="">What has everyone been focusing on?</h3>
-        <p>Heated research fields often correlate with great demands from society. Back in late 2018, when we were first pooling wisdoms for our 2019 iGEM project, we wrote a “crawlers” to catch up the frequently occurring key words in recent years’ iGEM competition, in designation of finding what unravelling puzzles did scientists put much effort in, and what urgent issues did the iGEM community mostly care about. The key word “cancer”, unbelievable but reasonable, topped the list. In light of this, we decided to find a new way, using biological engineering, for cancer therapy. </p>
-
-        <h3 class="">What does a new cancer biotherapy need?</h3>
-        <p>Cancer therapy is developing rapidly, and many new biological therapy methods, such as CAR-T, are often reported in recent years. So, what characteristics do new therapies need compared to traditional treatments such as chemoradiotherapy and surgery? </p>
-        <p>To answer this question, we turned to Dr. Huang Rongkang, an experienced clinician from the Sixth affiliated hospital of Sun Yat-Sen University, who has been dedicated himself in treating colorectal cancer and research development frontline for about a decade. </p>
-        <p>“Specificity is the major defect in current cancer therapy!” He said.</p>
-        <p>Dr. Huang told us that chemotherapy was once referred as to have “333 principles”, which means it is effective to one third of patients, neutral (neither improves nor worsens) to another one third of patients, and ineffective even aggravating the situations due to toxic side effects to the remaining one third. Dr. Huang also anticipated a more precise medicine and pinpoint drug delivery in cancer therapy, for less toxic side effects and better treatments when dealing with cancer. </p>
-        <p>To sum up, an idol new cancer treatment method should meet the needs of precision therapy and local drug delivery.</p>
-        <img src="https://2019.igem.org/wiki/images/2/2b/T--SYSU-CHINA--direction.jpg" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
-
-      </div>
-
-      <div>
-        <h2 id="c2" class="">Find the precise target</h2>
-        <p>To achieve specificity, it is necessary to have a high specificity target and the corresponding identification system. In the past few years, a large number of cancer molecular targets were applied in the research of new drugs. However, how can we improve these targets with synthetic biology? </p>
-
-        <h3 class="">What has everyone been focusing on?</h3>
-        <p>As we struggle with different cancer targets, a lecture given by Professor Kuang from Hong Kong University of Science and Technology enlightened us. In this November lecture, Professor Kuang introduced her work to screen specific cell type from iPSCs according to different endogenous miRNA expression, which led us into asking such a question: </p>
-        <p>Could the endogenous miRNA of cancer cell also be used as a target?</p>
-        <p>With this question, we consulted Professor Zheng Linlin who studied oncomiRNAs in our college. It was not until then did we learn that miRNA profile has been widely served as a marker for cancer detection and prognosis. In other words, it certainly has potentials to target tumor cells as long as we could find the tumor-specific miRNA profiles.</p>
-        <p>So now we asked: how to find specific miRNA expression profiles and how to construct corresponding systems that target miRNAs.</p>
-
-        <h3 class="">Filter colon tumor specific miRNA expression by modeling </h3>
-        <p>The work to find out specific miRNA expression profile starts with 2 questions:</p>
-        <p>• Which tumor should we focus on?</p>
-        <p>• What principles do we need to achieve screening?</p>
-        <p>When we first interviewed Dr. Huang, he has motivated us to apply our newly developed therapy to colon cancer. Because there is still a large gap in the precise treatment of colon cancer and new adjuvant therapy is urgently needed. So we use colon cancer as the first application case of our system.</p>
-        <p>With his encouragement, we began to analyze the miRNA expression profiles of colon cancer. An R language program was developed for miRNA filtering and we put forward some principles based on security and specific considerations. (For more details please refers to “Design”) Based on the above work, we successfully obtained miRNA expression profiles specifically expressed in colon cancer.</p>
-
-        <h3 class="">Review our target: Reduce potential off-target risk</h3>
-        <p>We obtained a specific miRNA expression in colon cancer by computer program analysis and showed our staged results to our PI Professor Lu Yongjun. He asked if we had checked the expression of these miRNAs between different tissues and asked us to further determine the credibility of the data. We were then surprised to find that the target miRNA profile determined initially had the same expression in sperm. More accurately, the high expression of miR-592 and the low expression of miR-885-5P found in colon cancer also occur in sperm, which means that our system may have potential off-target risks if we only use those two miRNAs above.</p>
-        <p>To reduce off-target effects, we need a miRNA that targets specific tissues. At this point we found miR663, a miRNA missing in colon-derived cells, which is highly expressed in sperm. After adding new miRNAs, we again examined the specificity of the new combination and found no similar miRNA expression patterns in all normal tissues.</p>
-        <img src="https://2019.igem.org/wiki/images/0/09/T--SYSU-CHINA--miRNA_in_tissue.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
-
-        <h3 class="">miRNA-sensor: A synthetic RNA system to correspond miRNA target</h3>
-        <p>With the target, we need a set of targeting systems to identify miRNA expression. The work on the mRNA circuit by Professor Ron Weiss in MIT has helped us a lot. Based on the nature of mRNA degradation caused by miRNA binding to mRNA, they proposed an mRNA circuit consisting of two basic logic gate elements that respond to miRNA concentrations.</p>
-        <p>Based on this work, we constructed the basic elements that respond to the high and low expression of miRNAs, and used them to form logic gates to identify specific miRNA expression in colon cancer. (For more details please refers to “Design”)/p>
-          <img src="https://2019.igem.org/wiki/images/1/12/T--SYSU-CHINA--logic_gate.png" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
-
-        <h3 class="">Surprise: Help from project and advisor in SYSU-CHINA 2013</h3>
-        <p>At this time, our PI Prof. Lu told us that our team SYSU-CHINA had done a similar work with iPSC in 2013 and their advisor Dr. Jiang Shuai is still working in our university. After learning about our project, Dr. Jiang pointed out the potential problem of this system at once —— Sponge Effect. The sponge effect means that the miRNA will suddenly increase or decrease under certain conditions. Since the mechanism is still unclear, almost all miRNA-related systems will be affected by it. </p>
-        <p>Based on the experience of SYSU-CHINA 2013, Dr. Jiang suggested that we could improve the sequence of mRNA and miRNA binding to reduce the effect of sponge effect. Based on his suggestions and other works in recent years, we made improvements to the miRNA binding sequence and shared this design concept with Central South University later.</p>
-        <p>Without his reminder, we might not have realized this problem yet. The previous work by SYSU-CHINA in 2013 really gives us a big surprise! </p>
-      </div>
-
-      <div>
-        <h2 id="c3" class="">Deliver our system into cancer cell (Find out Deliverer)</h2>
-        <p>Since our system is constructed to recognize endogenous specific miRNAs, we need a drug delivery vector to bring the system into cancer cell. Such deliverer can be divided into two levels, one is what to use to carry the mRNA circuit at the cellular level, and the other is how to achieve the drug delivery in practical application.</p>
-        <p>It was about December, Wen Rou, one of our team members, happened to read an article "Adenoviral vector with shield and adapter increases tumor specificity and escapes liver and immune control." on Nature communications. This article brought the oncolytic virus in front of us and we were amazed to find that this system can not only act as a carrier, but also itself as an effector for killing tumors. This engineered virus can only be propagated in cancer cells and released after cell lysis to infect surrounding cancer cells. How amazing! We thought. It could be self-replicon guard to eliminate evil tumor cells in our body!</p>
-        <p>As the oncolytic virus is more of a conceptual idea, we need to identify a real virus as a modified chassis. After comparing different viruses (see “Design” for details), we chose adenovirus as the basic biological chassis.</p>
-        <img src="https://2019.igem.org/wiki/images/8/83/T--SYSU-CHINA--oncocomic.jpg" style="width:80%; position: relative; margin-left: 10%; margin-left: 10%;">
-
-        <h3 class="">Safety concerns: Is it suitable to use a virus?</h3>
-        <p>Here comes another problem that the adenovirus is a BSL II creature and whether the use of it comply with regulations of iGEM competition? We emailed the organizing committee on this issue and received a warm response from Piers. Here, I would like to sincerely thank Piers for his kind assistance, with which we started to re-consider the security of our project.</p>
-        <p>We looked back at the iGEM projects over the past few years and found that there are not many examples on virus application. Obviously, this is a field full of doubts about security. Whether adenovirus should continue to serve as a biological chassis, we refer to three aspects for opinions: public concerns, doctors' opinions and relevant legal provisions.</p>
-        <p>A lot of work, such as interviews, questionnaires were conducted and released when trying to settle this urgent problem. Fortunately, we found that it is possible to promote our project into further clinical application if our design was truly proved effective. (See “Human Practices” for more details)</p>
-
-        <h3 class="">Mode of administration: How to apply it to future medical practice</h3>
-        <p>Considering the practical application of our system in the future, we need to design a viable mode of administration. Viral therapy is generally administered intravenously, and the FDA has strict regulations on the amount of virus injected. Since our first application case was colon cancer, which is exposed to the colon surface, we also considered two non-invasive modes of administration: enema and rectal suppositories. </p>
-        <p>At first we thought that enema could be used as a viable alternative to injection because it more accurately locates the colon. Since blood injection is not required, the risk of infection from injection also decrease, while the public's concerns about viral injections will be reduced as well.</p>
-        <p>However, Dr. Huang vetoed our mode of administration, when we brought our existing project to him with confidence once again. It turns out that although the enema could be administered locally, it stays in the intestine for too short a time, which results that the virus may not have enough chance to infect cancer cells. In addition, Dr. Huang introduced several new modes of administration and suggested that we should do a deep investigation about it. We then compared five potential modes of administration and selected a cutting-edge method recommended by Dr. Huang, which is called hydrogel-based drug delivery systems.(more details in “Future work” and “Human Pratice”)</p>
-
-      </div>
-
-      <div>
-        <h2 id="c4" class="">Potential in Synthetic Biology</h2>
-        <p>In the end we will introduce the synthetic biology value of the above construction system, which is reflected in both medical applications and basic research.</p>
-
-        <h3 class="">Potential for multiple tumors by rapid adaptation </h3>
-        <p>Although we are temporarily focusing on colon cancer, this system theoretically has the potential to respond to all tumor cells. Since the target is a miRNA that is present in all cells, as long as any tumor-specific miRNA can be found, it can be suitable to our system with only modifying few miRNA target sequences. Combined with the mode of administration we envision, this system can be well applied to the treatment of various solid tumors in the future.</p>
-        <p>We also understand that oncolytic viruses can be combined with a variety of oncology and can enhance the effectiveness of other therapies. A new generation of oncolytic viruses and immune factors work together to make them more lethal. The oncolytic virus system we built is fully compatible with such improvements. As we use engineering ideas to build this system, it is very convenient and feasible to modify the different parts of the whole system.</p>
-
-        <h3 class="">Prospect in personalized treatment</h3>
-        <p>Most importantly, since the tumors showed large differences in different people, many molecular targets results vary. Our oncolytic virus system offers a potential for future personalized cancer treatment.</p>
-        <p>The doctor can first collect the patient's tumor sample to detect the expression of miRNA, and then use our computer analysis model to screen the miRNA specifically expressed in the individual tumor to construct a personalized oncolytic virus. There is no doubt that this personalized oncolytic virus is safer and more efficient.</p>
-
-        <h3 class="">Virus system responding to different levels of signals</h3>
-        <p>From another perspective, we have built a modular virus system that responds to different levels of regulation this year. First of all, our miR sensor, switch and virus vectors are highly modular which could acheive rapid update through synthetic biology method. </p>
-        <p>On the other hand, our system provides the possibility of simultaneous regulation at the transcriptional level and translation level. Gene expression can be regulated at the transcriptional level by the Tet-on system, and protein translation can be regulated at the mRNA level by miRNA sensor. This enriches the possibility of virus-mediated gene expression systems.</p>
-
-      </div>
+      <img src="https://2019.igem.org/wiki/images/7/7b/T--SYSU-CHINA--1.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Prof. Lu Yongjun" data-content="<p style='text-align: left !important;'><strong>Instructor</strong></p> Why can such a respectable professor be so nice?!!!!" data-html="true">
+      <img src="https://2019.igem.org/wiki/images/4/47/T--SYSU-CHINA--2.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Chen Jionglin" data-content="<p style='text-align: left !important;'><strong>Team leader, experiment, modelling, art design, etc</strong></p> Since I participated in iGEM, I’ve learned EVERYTHING." data-html="true">
+      <img src="https://2019.igem.org/wiki/images/8/84/T--SYSU-CHINA--3.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Chang Yanqi" data-content="<p style='text-align: left !important;'><strong>Team leader, modelling, human practices</strong></p> A consultant who doesn’t know biological data analysis is not a good team leader." data-html="true">
+      <img src="https://2019.igem.org/wiki/images/e/ec/T--SYSU-CHINA--4.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Wu Zhien" data-content="<p style='text-align: left !important;'><strong>Molecular experiment, human practices</strong></p> The world is worth the future." data-html="true">
+      <img src="https://2019.igem.org/wiki/images/3/34/T--SYSU-CHINA--5.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Gao Shangfang" data-content="<p style='text-align: left !important;'><strong>Molecular and cell experiment</strong></p> Shh!!! Don’t you see my 96-well plate?" data-html="true">
+      <img src="https://2019.igem.org/wiki/images/0/0a/T--SYSU-CHINA--6.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Huang Junyu" data-content="<p style='text-align: left !important;'><strong>Human Practices</strong></p> Connect with our treasure HP boy!" data-html="true">
+      <img src="https://2019.igem.org/wiki/images/b/bf/T--SYSU-CHINA--7.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Huang Ao" data-content="<p style='text-align: left !important;'><strong>Human Practices</strong></p> It's fantasitic to see that you can make a difference to the world!" data-html="true">
+      <img src="https://2019.igem.org/wiki/images/5/5e/T--SYSU-CHINA--8.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Zhou Shuaixi" data-content="<p style='text-align: left !important;'><strong>Molecular experiment</strong></p> Stay Cool." data-html="true">
+      <img src="https://2019.igem.org/wiki/images/e/e7/T--SYSU-CHINA--9.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Wen Rou" data-content="<p style='text-align: left !important;'><strong>Human Practices, experiment</strong></p> Want to steal her GPA." data-html="true">
+      <img src="https://2019.igem.org/wiki/images/4/47/T--SYSU-CHINA--10.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Liu Lanjun" data-content="<p style='text-align: left !important;'><strong>Art design, experiment</strong></p> Her paintings are as gorgeous as herself!" data-html="true">
+      <img src="https://2019.igem.org/wiki/images/8/88/T--SYSU-CHINA--11.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Lu Yalin" data-content="<p style='text-align: left !important;'><strong>Art design</strong></p> Draw it to fantasy." data-html="true">
+      <img src="https://2019.igem.org/wiki/images/b/b7/T--SYSU-CHINA--12.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Wang Chengwei" data-content="<p style='text-align: left !important;'><strong>Wiki builder, modeling</strong></p> Still not good enough to be max well" data-html="true">
+      <img src="https://2019.igem.org/wiki/images/8/80/T--SYSU-CHINA--13.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Liang Jiaqi" data-content="<p style='text-align: left !important;'><strong>Modeling</strong></p> Data in my hand, world in my mind." data-html="true">
+      <img src="https://2019.igem.org/wiki/images/f/fe/T--SYSU-CHINA--14.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Xu Jiaxian" data-content="<p style='text-align: left !important;'><strong>Advice provider, experiment</strong></p> My wife: Hatsune Miku." data-html="true">
+      <img src="https://2019.igem.org/wiki/images/8/8b/T--SYSU-CHINA--15.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="WONG, Yuen Ying" data-content="<p style='text-align: left !important;'><strong>Experiment, art design, human practices</strong></p> The only medico in our team. Future Dr. Wong!" data-html="true">
+      <img src="https://2019.igem.org/wiki/images/2/22/T--SYSU-CHINA--16.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="He Yuansi" data-content="<p style='text-align: left !important;'><strong>Experiment helpers, art design assistants</strong></p> Grow better together! Look forward to their show time in next year’s iGEM." data-html="true">
+      <img src="https://2019.igem.org/wiki/images/c/c5/T--SYSU-CHINA--17.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Wang Jiaxin" data-content="<p style='text-align: left !important;'><strong>Experiment helpers, art design assistants</strong></p> Grow better together! Look forward to their show time in next year’s iGEM." data-html="true">
+      <img src="https://2019.igem.org/wiki/images/a/a0/T--SYSU-CHINA--18.png" style="width:25%; position: relative; box-shadow: none;" class="icon" rel="popover" title="Zhao Bingnan" data-content="<p style='text-align: left !important;'><strong>Experiment helpers, art design assistants</strong></p> Grow better together! Look forward to their show time in next year’s iGEM." data-html="true">
 
       <hr class="col-md-13">
     </div>
   </div>
 </div>
 </div>
+
 
 
 
@@ -318,10 +243,6 @@
 	</span>
 </div>
 
-<!-- up to next Button-->
-<div class="scroll-down-wrapper">
-  <span class="glyphicon glyphicon-chevron-down""></span>
-</div>
 
 <!-- FOOTER -->
 <footer id="footer" class="page-footer">
@@ -333,10 +254,7 @@
         <h6 class="text-uppercase" style="color: #f9d26b; font-size: 16px; ">
           <strong>Links</strong>
         </h6>
-        <p style="text-align: center;">
-          <a href="#" style="color: #ffffff; font-size: 14px;">
-            FAQ</a>
-        </p>
+
       </div>
       <!--/.First column-->
       <!--Second column-->
@@ -344,10 +262,7 @@
         <h6 class="text-uppercase font-weight-bold " style="color: #f9d26b; font-size: 16px; ">
           <strong>Resources</strong>
         </h6>
-        <p style="text-align: center;">
-          <a href="#" style="color: #ffffff; font-size: 14px; ">
-            SYSU</a>
-        </p>
+
       </div>
       <!--/.Second column-->
       <!--Third column-->
@@ -355,10 +270,7 @@
         <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
           <strong>Helper</strong>
         </h6>
-        <p style="text-align: center;">
-          <a href="/education/" style="color: #ffffff; font-size: 14px;">
-            Basics (HTML/CSS/JS)</a>
-        </p>
+
       </div>
       <!--/.Third column-->
       <!--Fourth column-->
@@ -366,10 +278,7 @@
         <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
           <strong>Company</strong>
         </h6>
-        <p style="text-align: center;">
-          <a href="#" style="color: #ffffff; font-size: 14px;">
-            Our team</a>
-        </p>
+
       </div>
       <!--/.Fourth column-->
     </div>

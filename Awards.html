@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Carousel Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../carousel/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+
+<!-- NAVBAR
+================================================== -->
+<body>
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://2019.igem.org/Team:SYSU-CHINA">
+            <img src="http://2019.igem.org/wiki/images/1/1f/T--SYSU-CHINA--title0.jpg" alt="logo"
+                 style="left:30px; width: 300px; height: 50px; ">
+          </a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right .navbar-fixed-top">
+            <!-- TEAM -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                TEAM
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="#">Team Members</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Collaborations">Collaborations</a></li>
+                <li><a href="#">Awards</a></li>
+              </ul>
+            </li>
+
+            <!-- PROJECT -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true"
+                 aria-expanded="false">
+                PROJECT
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Description">Description</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Design">Design</a></li>
+                <li><a href="#">Experiments</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Measurement">Measurement</a></li>
+                <li><a href="#">Notebook</a></li>
+                <li><a href="#">Contribution</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Demonstrate">Demonstrate</a></li>
+                <li><a href="#">Improve</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Attributions">Attributions</a></li>
+              </ul>
+            </li>
+
+            <!-- Model -->
+            <li class="dropdown">
+              <a href="http://2019.igem.org/Team:SYSU-CHINA/Model" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                MODEL
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Description">Description</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">R</a></li>
+              </ul>
+            </li>
+
+            <!-- PARTS -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                PARTS
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Basic Parts</a></li>
+                <li><a href="#">Part Collection</a></li>
+              </ul>
+            </li>
+
+            <!-- SAFETY -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                SAFETY
+              </a>
+            </li>
+
+            <!-- HUMAN PRACTICES -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false" style="width: 250px;">
+                HUMAN PRACTICES
+                <span class="caret" style="color: #FFD465;"></span>
+              </a>
+              <ul class="dropdown-menu" style="min-width:100%;">
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Human_Practices">Human Practices</a></li>
+                <li><a href="http://2019.igem.org/Team:SYSU-CHINA/Human_Practices#IHP">Integrated Human Practices</a></li>
+              </ul>
+            </li>
+
+            <!-- AWARDS
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                 role="button" aria-haspopup="true" aria-expanded="false">
+                AWARDS
+              </a>
+            </li>-->
+
+            <!-- OTHERS -->
+            <!--<li><a href="#contact">Contact</a></li>
+
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>-->
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
+
+
+  <div class="carousel-inner" role="listbox">
+
+    <div id="tmback" class="item active img-responsive">
+      <div class="container">
+
+        <div class="bg"></div>
+
+        <div class="carousel-caption" style="
+        margin-bottom: 10%;">
+          <h1 class="hugetitle">Awards</h1>
+        </div>
+
+        <!-- up to next Button-->
+        <div class="scroll-down-wrapper">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div><!-- /.carousel -->
+</div>
+
+
+
+
+
+<!-- Begin Body -->
+<div class="mycontainer" id="mycontentcon">
+  <div class="row">
+    <!--SideBar-->
+    <div class="col-md-2">
+      <div class="list-group navbar" id="sidebar">
+        <ul class="nav mynav" data-spy="affix" data-offset-top="0px">
+          <li><a href="#t" class="list-group-item" style="
+          height: 40px;
+          text-align: center;
+          vertical-align: center;
+          border-top: 7px solid #f0ad4e !important;
+          border-left: 5px solid #f0ad4e !important;
+          border-right: 3px solid #f0ad4e !important;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 0 !important;
+          padding-right: 0 !important;">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar" >
+                <span class="progress-value">Awards</span>
+              </div>
+            </div>
+          </a>
+          </li>
+          <li><a href="#c1" class="list-group-item" style="border-top: 3px solid #f0ad4e !important; ">
+            Bronze Medal
+          </a>
+          </li>
+          <li> <a href="#c2" class="list-group-item" contenteditable="false">
+            Silver Medal
+          </a>
+          </li>
+          <li> <a href="#c3" class="list-group-item" contenteditable="false">
+            Gold Medal
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-9" id="mycontent">
+      <h1 id="t" class="">Awards</h1>
+      <hr class="col-md-12">
+
+      <div>
+        <h2 id="c1"><b>As for the Bronze Medal: </b></h2>
+        <h3><b><i class="glyphicon glyphicon-ok"></i>  Registration and Giant Jamboree Attendance </b></h3>
+        <p>Register our team, have a great iGEM summer, and attend the exciting Giant Jamboree. </p>
+        <h3><b><i class="glyphicon glyphicon-ok"></i>  Competition Deliverables </b></h3>
+        <p>Create and share a description of the team's project using the iGEM Wiki. </p>
+        <p>Prepared to present a vivid Poster at the iGEM Jamboree. </p>
+        <p>Plan to give an enthusiastic Presentation at the iGEM Jamboree. </p>
+        <p>Successfully complete and submit our iGEM 2019 Judging form. </p>
+        <h3><b><i class="glyphicon glyphicon-ok"></i>  Attributions </b></h3>
+        <p>Finish the Attribution page to show our appreciation to those who help our project move towards completion. </p>
+        <h3><b><i class="glyphicon glyphicon-ok"></i>  Project Inspiration and Description </b></h3>
+        <p>Complete the Project Inspiration and Description of Competition Deliverable to present our project clearly. </p>
+        <h3><b><i class="glyphicon glyphicon-ok"></i>  Characterization / Contribution </b></h3>
+        <p>Add quantitative experimental characterization data to an existing Part from the Registry of Standard Biological Parts. </p>
+      </div>
+
+      <div>
+        <h2 id="c2"><b>As for the Silver Medal: </b></h2>
+        <h3><b><i class="glyphicon glyphicon-ok"></i>  Validated Part / Validated Contribution </b></h3>
+        <p>Document the experimental characterization on that Part's Main Page on the Registry of a new BioBrick Part of our design, which works as expected. </p>
+        <h3><b><i class="glyphicon glyphicon-ok"></i>  Collaboration </b></h3>
+        <p>Clearly document our collaboration with SZU-China on our Wiki. </p>
+        <h3><b><i class="glyphicon glyphicon-ok"></i>  Human Practices </b></h3>
+        <p>Document our Human Practices on our Wiki pages to show the importance of this indispensable facet. </p>
+      </div>
+
+      <div>
+        <h2 id="c3"><b>As for the Gold Medal: </b> </h2>
+        <h3><b><i class="glyphicon glyphicon-ok"></i>  Integrated Human Practices </b></h3>
+        <p>On our Wiki, how the Human Practices integrate with our project is clearly demonstrated, which shows those we have done to society have supported our project, and our experiment data have indicated our next steps to do with Human Practices. </p>
+        <h3><b><i class="glyphicon glyphicon-ok"></i>  Model Your Project </b></h3>
+        <p>Document our Model clearly on our team's Wiki, which has impacted our project design in a meaningful way. The assumptions, relevant data, model results, and a clear explanation of our model is included. </p>
+        <h3><b><i class="glyphicon glyphicon-ok"></i>  Demonstration of Your Work </b></h3>
+        <p>Out of our lab experiments, we engineered system works of our project and the detailed demonstration is on our Wiki. As a Therapeutics Track, we envisioned how the project would be administered and the situation when it would be used as a realistic therapy. </p>
+      </div>
+
+
+      <hr class="col-md-13">
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Back to up Button-->
+<div class="scroll-top-wrapper ">
+	<span class="scroll-top-inner">
+		<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+	</span>
+</div>
+
+
+<!-- FOOTER -->
+<footer id="footer" class="page-footer">
+  <!--Footer Links-->
+  <div class="container text-center">
+    <div class="row1">
+      <!--First column-->
+      <div class="col-md-3 col-lg-2">
+        <h6 class="text-uppercase" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Links</strong>
+        </h6>
+
+      </div>
+      <!--/.First column-->
+      <!--Second column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold " style="color: #f9d26b; font-size: 16px; ">
+          <strong>Resources</strong>
+        </h6>
+
+      </div>
+      <!--/.Second column-->
+      <!--Third column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Helper</strong>
+        </h6>
+
+      </div>
+      <!--/.Third column-->
+      <!--Fourth column-->
+      <div class="col-md-3">
+        <h6 class="text-uppercase font-weight-bold" style="color: #f9d26b; font-size: 16px; ">
+          <strong>Company</strong>
+        </h6>
+
+      </div>
+      <!--/.Fourth column-->
+    </div>
+  </div>
+  <!--/.Footer Links-->
+  <!-- Copyright-->
+  <div class="footer-copyright py-3 text-center">
+    <a href="http://2019.igem.org/Team:SYSU-CHINA" style="color: #f9d26b; font-size: 14px;">
+      2019 iGEM SYSU-CHINA
+    </a>
+  </div>
+  <!--/.Copyright -->
+</footer>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>-->
+<!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.min.js"><\/script>')</script>-->
+<!--  <script>window.jQuery || document.write('<script src="../carousel/js/jquery.js"><\/script>')</script>-->
+
+<script src="../carousel/js/jquery.min.js"></script>
+<!-- <script src="../carousel/js/jquery.js"></script> -->
+<script src="../carousel/js/bootstrap.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="../carousel/js/holder.min.js"></script>
+</body>
+</html>
